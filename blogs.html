@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <title>Document</title>
+    <style>
+        .accordion {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        .accordion-item {
+            border-radius: 8px;
+        }
+
+        .accordion-body {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding-top: 0px !important;
+            color: #4C5254 !important;
+            line-height: 150%;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: unset !important;
+            box-shadow: unset !important;
+        }
+
+        .accordion-item {
+            border-top: 0 !important;
+        }
+
+        .accordion-header {
+            border-top: 1px solid #e6e6e6 !important;
+            border-radius: 8px !important;
+            overflow: hidden;
+        }
+
+        .accordion-item {
+            border-radius: 8px !important;
+        }
+
+        .accordion-item>.accordion-header .accordion-button {
+            border-top-left-radius: unset !important;
+            border-top-right-radius: unset !important;
+            box-shadow: unset;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: var(--bs-accordion-btn-active-iconn) !important;
+        }
+
+        .accordion-button {
+            font-weight: 700;
+            color: #192023 !important;
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        .quote-text {
+            color: #000;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        header {
+            padding-top: 20px;
+            height: 271px;
+            position: unset !important;
+            background-color: transparent;
+            backdrop-filter: unset;
+            background-image: url('../assets/image/brudcumb-image.png');
+        }
+    </style>
+
+    <style>
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link {
+            color: white;
+            padding: 20px 0;
+            margin-left: 32px;
+        }
+
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link:hover,
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link.active {
+            background: unset;
+
+        }
+
+        .brudcumb-title {
+            margin-top: 60px;
+        }
+    </style>
+    <style>
+        .consultation-today-section {
+            padding: 175px 0;
+        }
+
+        .consultation-today-section h2 {
+            font-weight: 600;
+            line-height: 110.00000000000001%;
+            letter-spacing: 0%;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+
+        .consultation-today-section p {
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 70px;
+        }
+    </style>
+    <style>
+        .tab-link-container {
+            margin-bottom: 70px;
+        }
+
+        .tab-link {
+            text-decoration: none;
+            border: 1px solid #193A50;
+            padding: 10px 22px;
+            color: #212121;
+            border-radius: 32px;
+            margin-left: 15px;
+            font-size: 16px;
+        }
+
+        .tab-link.active {
+            border: 1px solid #B4D7EE;
+            background: #E3F4FF;
+        }
+
+        .tab-link:hover {
+            border: 1px solid #B4D7EE;
+            background: #E3F4FF;
+        }
+
+        .portfolio-card {
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 400px;
+            border: 1px solid #EAEAEA;
+            margin: 0 auto;
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .p-date {
+            padding: 8px 10px;
+            color: white;
+            background-color: #FF0000;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .separetor {
+            width: 1px !important;
+            background-color: #EAEAEA;
+            height: auto;
+            margin: 0 20px;
+        }
+
+        .user-intarantion {
+            color: #858585;
+            font-size: 14px;
+            padding: 12px 0;
+        }
+
+        .portfolio-description {
+            padding: 30px;
+            padding-top: 0px;
+        }
+
+        .portfolio-description .title {
+            display: inline-block;
+            font-size: 20px;
+            line-height: 30px;
+            color: #2B2B52;
+            font-weight: 500;
+            margin-bottom: 16px;
+            min-height: 60px;
+        }
+
+        .portfolio-description p {
+            color: #52525C;
+        }
+
+        .read-more {
+            color: #FF0000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Example Code Start-->
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/image/logo-white.png" alt="logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                        <ul class="navbar-nav nav-item-text">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Web Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Digital Marketing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Graphic Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services Menu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Example Code End -->
+        </div>
+        <div class="d-flex w-100 justify-content-center align-items-center">
+            <h3 class="text-center text-white brudcumb-title title-3">Portfolio</h3>
+        </div>
+    </header>
+
+    <main>
+        <!-- Portfolio card section start -->
+        <section class="container py-120">
+            <div class="text-center tab-link-container">
+                <div class="tab-list">
+                    <a href="" class="tab-link">All</a>
+                    <a href="" class="tab-link">Bag</a>
+                    <a href="" class="tab-link">Shoes</a>
+                    <a href="" class="tab-link">Man</a>
+                    <a href="" class="tab-link">Small Leather Goods</a>
+                    <a href="" class="tab-link">Jewelry</a>
+                </div>
+            </div>
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4 justify-content-center">
+                <div class="col">
+                    <div class="portfolio-card">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="assets/image/portfolio-details/1.png" alt="">
+                            <div class="p-date d-inline-flex">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.125 16.3125C1.125 17.2441 1.88086 18 2.8125 18H15.1875C16.1191 18 16.875 17.2441 16.875 16.3125V6.75H1.125V16.3125ZM12.375 9.42188C12.375 9.18984 12.5648 9 12.7969 9H14.2031C14.4352 9 14.625 9.18984 14.625 9.42188V10.8281C14.625 11.0602 14.4352 11.25 14.2031 11.25H12.7969C12.5648 11.25 12.375 11.0602 12.375 10.8281V9.42188ZM12.375 13.9219C12.375 13.6898 12.5648 13.5 12.7969 13.5H14.2031C14.4352 13.5 14.625 13.6898 14.625 13.9219V15.3281C14.625 15.5602 14.4352 15.75 14.2031 15.75H12.7969C12.5648 15.75 12.375 15.5602 12.375 15.3281V13.9219ZM7.875 9.42188C7.875 9.18984 8.06484 9 8.29688 9H9.70312C9.93516 9 10.125 9.18984 10.125 9.42188V10.8281C10.125 11.0602 9.93516 11.25 9.70312 11.25H8.29688C8.06484 11.25 7.875 11.0602 7.875 10.8281V9.42188ZM7.875 13.9219C7.875 13.6898 8.06484 13.5 8.29688 13.5H9.70312C9.93516 13.5 10.125 13.6898 10.125 13.9219V15.3281C10.125 15.5602 9.93516 15.75 9.70312 15.75H8.29688C8.06484 15.75 7.875 15.5602 7.875 15.3281V13.9219ZM3.375 9.42188C3.375 9.18984 3.56484 9 3.79688 9H5.20312C5.43516 9 5.625 9.18984 5.625 9.42188V10.8281C5.625 11.0602 5.43516 11.25 5.20312 11.25H3.79688C3.56484 11.25 3.375 11.0602 3.375 10.8281V9.42188ZM3.375 13.9219C3.375 13.6898 3.56484 13.5 3.79688 13.5H5.20312C5.43516 13.5 5.625 13.6898 5.625 13.9219V15.3281C5.625 15.5602 5.43516 15.75 5.20312 15.75H3.79688C3.56484 15.75 3.375 15.5602 3.375 15.3281V13.9219ZM15.1875 2.25H13.5V0.5625C13.5 0.253125 13.2469 0 12.9375 0H11.8125C11.5031 0 11.25 0.253125 11.25 0.5625V2.25H6.75V0.5625C6.75 0.253125 6.49687 0 6.1875 0H5.0625C4.75312 0 4.5 0.253125 4.5 0.5625V2.25H2.8125C1.88086 2.25 1.125 3.00586 1.125 3.9375V5.625H16.875V3.9375C16.875 3.00586 16.1191 2.25 15.1875 2.25Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>June 10, 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-description">
+                            <div class="d-flex user-intarantion">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.875 9C10.3605 9 12.375 6.98555 12.375 4.5C12.375 2.01445 10.3605 0 7.875 0C5.38945 0 3.375 2.01445 3.375 4.5C3.375 6.98555 5.38945 9 7.875 9ZM11.025 10.125H10.4379C9.65742 10.4836 8.78906 10.6875 7.875 10.6875C6.96094 10.6875 6.09609 10.4836 5.31211 10.125H4.725C2.11641 10.125 0 12.2414 0 14.85V16.3125C0 17.2441 0.755859 18 1.6875 18H14.0625C14.9941 18 15.75 17.2441 15.75 16.3125V14.85C15.75 12.2414 13.6336 10.125 11.025 10.125Z"
+                                                fill="#FF0000" />
+                                        </svg>
+                                    </span>
+                                    <span>Admin</span>
+
+                                </div>
+                                <div class="separetor"></div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_3130_2215)">
+                                                <path
+                                                    d="M13 7C13 4.2375 10.0906 2 6.5 2C2.90937 2 0 4.2375 0 7C0 8.07187 0.440625 9.05937 1.1875 9.875C0.76875 10.8187 0.078125 11.5687 0.06875 11.5781C0 11.65 -0.01875 11.7562 0.021875 11.85C0.0625 11.9437 0.15 12 0.25 12C1.39375 12 2.34062 11.6156 3.02187 11.2187C4.02812 11.7094 5.21875 12 6.5 12C10.0906 12 13 9.7625 13 7ZM16.8125 13.875C17.5594 13.0625 18 12.0719 18 11C18 8.90937 16.3281 7.11875 13.9594 6.37187C13.9875 6.57812 14 6.7875 14 7C14 10.3094 10.6344 13 6.5 13C6.1625 13 5.83437 12.975 5.50938 12.9406C6.49375 14.7375 8.80625 16 11.5 16C12.7812 16 13.9719 15.7125 14.9781 15.2187C15.6594 15.6156 16.6063 16 17.75 16C17.85 16 17.9406 15.9406 17.9781 15.85C18.0187 15.7594 18 15.6531 17.9312 15.5781C17.9219 15.5687 17.2313 14.8219 16.8125 13.875Z"
+                                                    fill="#FF0000" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3130_2215">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>(<span>0</span>) Comments</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h2><a href="" class="title mb-3">CD Lady Dior Mini
+                                    (Special) 08</a></h2>
+                            <p class="mb-3">Lorem ipsum dolor sit amet consecttur adipiscing elit. Pellentesque sagittis
+                                sit amet
+                                felis
+                                lobortis.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-card">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="assets/image/portfolio-details/1.png" alt="">
+                            <div class="p-date d-inline-flex">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.125 16.3125C1.125 17.2441 1.88086 18 2.8125 18H15.1875C16.1191 18 16.875 17.2441 16.875 16.3125V6.75H1.125V16.3125ZM12.375 9.42188C12.375 9.18984 12.5648 9 12.7969 9H14.2031C14.4352 9 14.625 9.18984 14.625 9.42188V10.8281C14.625 11.0602 14.4352 11.25 14.2031 11.25H12.7969C12.5648 11.25 12.375 11.0602 12.375 10.8281V9.42188ZM12.375 13.9219C12.375 13.6898 12.5648 13.5 12.7969 13.5H14.2031C14.4352 13.5 14.625 13.6898 14.625 13.9219V15.3281C14.625 15.5602 14.4352 15.75 14.2031 15.75H12.7969C12.5648 15.75 12.375 15.5602 12.375 15.3281V13.9219ZM7.875 9.42188C7.875 9.18984 8.06484 9 8.29688 9H9.70312C9.93516 9 10.125 9.18984 10.125 9.42188V10.8281C10.125 11.0602 9.93516 11.25 9.70312 11.25H8.29688C8.06484 11.25 7.875 11.0602 7.875 10.8281V9.42188ZM7.875 13.9219C7.875 13.6898 8.06484 13.5 8.29688 13.5H9.70312C9.93516 13.5 10.125 13.6898 10.125 13.9219V15.3281C10.125 15.5602 9.93516 15.75 9.70312 15.75H8.29688C8.06484 15.75 7.875 15.5602 7.875 15.3281V13.9219ZM3.375 9.42188C3.375 9.18984 3.56484 9 3.79688 9H5.20312C5.43516 9 5.625 9.18984 5.625 9.42188V10.8281C5.625 11.0602 5.43516 11.25 5.20312 11.25H3.79688C3.56484 11.25 3.375 11.0602 3.375 10.8281V9.42188ZM3.375 13.9219C3.375 13.6898 3.56484 13.5 3.79688 13.5H5.20312C5.43516 13.5 5.625 13.6898 5.625 13.9219V15.3281C5.625 15.5602 5.43516 15.75 5.20312 15.75H3.79688C3.56484 15.75 3.375 15.5602 3.375 15.3281V13.9219ZM15.1875 2.25H13.5V0.5625C13.5 0.253125 13.2469 0 12.9375 0H11.8125C11.5031 0 11.25 0.253125 11.25 0.5625V2.25H6.75V0.5625C6.75 0.253125 6.49687 0 6.1875 0H5.0625C4.75312 0 4.5 0.253125 4.5 0.5625V2.25H2.8125C1.88086 2.25 1.125 3.00586 1.125 3.9375V5.625H16.875V3.9375C16.875 3.00586 16.1191 2.25 15.1875 2.25Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>June 10, 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-description">
+                            <div class="d-flex user-intarantion">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.875 9C10.3605 9 12.375 6.98555 12.375 4.5C12.375 2.01445 10.3605 0 7.875 0C5.38945 0 3.375 2.01445 3.375 4.5C3.375 6.98555 5.38945 9 7.875 9ZM11.025 10.125H10.4379C9.65742 10.4836 8.78906 10.6875 7.875 10.6875C6.96094 10.6875 6.09609 10.4836 5.31211 10.125H4.725C2.11641 10.125 0 12.2414 0 14.85V16.3125C0 17.2441 0.755859 18 1.6875 18H14.0625C14.9941 18 15.75 17.2441 15.75 16.3125V14.85C15.75 12.2414 13.6336 10.125 11.025 10.125Z"
+                                                fill="#FF0000" />
+                                        </svg>
+                                    </span>
+                                    <span>Admin</span>
+
+                                </div>
+                                <div class="separetor"></div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_3130_2215)">
+                                                <path
+                                                    d="M13 7C13 4.2375 10.0906 2 6.5 2C2.90937 2 0 4.2375 0 7C0 8.07187 0.440625 9.05937 1.1875 9.875C0.76875 10.8187 0.078125 11.5687 0.06875 11.5781C0 11.65 -0.01875 11.7562 0.021875 11.85C0.0625 11.9437 0.15 12 0.25 12C1.39375 12 2.34062 11.6156 3.02187 11.2187C4.02812 11.7094 5.21875 12 6.5 12C10.0906 12 13 9.7625 13 7ZM16.8125 13.875C17.5594 13.0625 18 12.0719 18 11C18 8.90937 16.3281 7.11875 13.9594 6.37187C13.9875 6.57812 14 6.7875 14 7C14 10.3094 10.6344 13 6.5 13C6.1625 13 5.83437 12.975 5.50938 12.9406C6.49375 14.7375 8.80625 16 11.5 16C12.7812 16 13.9719 15.7125 14.9781 15.2187C15.6594 15.6156 16.6063 16 17.75 16C17.85 16 17.9406 15.9406 17.9781 15.85C18.0187 15.7594 18 15.6531 17.9312 15.5781C17.9219 15.5687 17.2313 14.8219 16.8125 13.875Z"
+                                                    fill="#FF0000" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3130_2215">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>(<span>0</span>) Comments</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h2><a href="" class="title mb-3">CD Lady Dior Mini
+                                    (Special) 08</a></h2>
+                            <p class="mb-3">Lorem ipsum dolor sit amet consecttur adipiscing elit. Pellentesque sagittis
+                                sit amet
+                                felis
+                                lobortis.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-card">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="assets/image/portfolio-details/1.png" alt="">
+                            <div class="p-date d-inline-flex">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.125 16.3125C1.125 17.2441 1.88086 18 2.8125 18H15.1875C16.1191 18 16.875 17.2441 16.875 16.3125V6.75H1.125V16.3125ZM12.375 9.42188C12.375 9.18984 12.5648 9 12.7969 9H14.2031C14.4352 9 14.625 9.18984 14.625 9.42188V10.8281C14.625 11.0602 14.4352 11.25 14.2031 11.25H12.7969C12.5648 11.25 12.375 11.0602 12.375 10.8281V9.42188ZM12.375 13.9219C12.375 13.6898 12.5648 13.5 12.7969 13.5H14.2031C14.4352 13.5 14.625 13.6898 14.625 13.9219V15.3281C14.625 15.5602 14.4352 15.75 14.2031 15.75H12.7969C12.5648 15.75 12.375 15.5602 12.375 15.3281V13.9219ZM7.875 9.42188C7.875 9.18984 8.06484 9 8.29688 9H9.70312C9.93516 9 10.125 9.18984 10.125 9.42188V10.8281C10.125 11.0602 9.93516 11.25 9.70312 11.25H8.29688C8.06484 11.25 7.875 11.0602 7.875 10.8281V9.42188ZM7.875 13.9219C7.875 13.6898 8.06484 13.5 8.29688 13.5H9.70312C9.93516 13.5 10.125 13.6898 10.125 13.9219V15.3281C10.125 15.5602 9.93516 15.75 9.70312 15.75H8.29688C8.06484 15.75 7.875 15.5602 7.875 15.3281V13.9219ZM3.375 9.42188C3.375 9.18984 3.56484 9 3.79688 9H5.20312C5.43516 9 5.625 9.18984 5.625 9.42188V10.8281C5.625 11.0602 5.43516 11.25 5.20312 11.25H3.79688C3.56484 11.25 3.375 11.0602 3.375 10.8281V9.42188ZM3.375 13.9219C3.375 13.6898 3.56484 13.5 3.79688 13.5H5.20312C5.43516 13.5 5.625 13.6898 5.625 13.9219V15.3281C5.625 15.5602 5.43516 15.75 5.20312 15.75H3.79688C3.56484 15.75 3.375 15.5602 3.375 15.3281V13.9219ZM15.1875 2.25H13.5V0.5625C13.5 0.253125 13.2469 0 12.9375 0H11.8125C11.5031 0 11.25 0.253125 11.25 0.5625V2.25H6.75V0.5625C6.75 0.253125 6.49687 0 6.1875 0H5.0625C4.75312 0 4.5 0.253125 4.5 0.5625V2.25H2.8125C1.88086 2.25 1.125 3.00586 1.125 3.9375V5.625H16.875V3.9375C16.875 3.00586 16.1191 2.25 15.1875 2.25Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>June 10, 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-description">
+                            <div class="d-flex user-intarantion">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.875 9C10.3605 9 12.375 6.98555 12.375 4.5C12.375 2.01445 10.3605 0 7.875 0C5.38945 0 3.375 2.01445 3.375 4.5C3.375 6.98555 5.38945 9 7.875 9ZM11.025 10.125H10.4379C9.65742 10.4836 8.78906 10.6875 7.875 10.6875C6.96094 10.6875 6.09609 10.4836 5.31211 10.125H4.725C2.11641 10.125 0 12.2414 0 14.85V16.3125C0 17.2441 0.755859 18 1.6875 18H14.0625C14.9941 18 15.75 17.2441 15.75 16.3125V14.85C15.75 12.2414 13.6336 10.125 11.025 10.125Z"
+                                                fill="#FF0000" />
+                                        </svg>
+                                    </span>
+                                    <span>Admin</span>
+
+                                </div>
+                                <div class="separetor"></div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_3130_2215)">
+                                                <path
+                                                    d="M13 7C13 4.2375 10.0906 2 6.5 2C2.90937 2 0 4.2375 0 7C0 8.07187 0.440625 9.05937 1.1875 9.875C0.76875 10.8187 0.078125 11.5687 0.06875 11.5781C0 11.65 -0.01875 11.7562 0.021875 11.85C0.0625 11.9437 0.15 12 0.25 12C1.39375 12 2.34062 11.6156 3.02187 11.2187C4.02812 11.7094 5.21875 12 6.5 12C10.0906 12 13 9.7625 13 7ZM16.8125 13.875C17.5594 13.0625 18 12.0719 18 11C18 8.90937 16.3281 7.11875 13.9594 6.37187C13.9875 6.57812 14 6.7875 14 7C14 10.3094 10.6344 13 6.5 13C6.1625 13 5.83437 12.975 5.50938 12.9406C6.49375 14.7375 8.80625 16 11.5 16C12.7812 16 13.9719 15.7125 14.9781 15.2187C15.6594 15.6156 16.6063 16 17.75 16C17.85 16 17.9406 15.9406 17.9781 15.85C18.0187 15.7594 18 15.6531 17.9312 15.5781C17.9219 15.5687 17.2313 14.8219 16.8125 13.875Z"
+                                                    fill="#FF0000" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3130_2215">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>(<span>0</span>) Comments</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h2><a href="" class="title mb-3">CD Lady Dior Mini
+                                    (Special) 08</a></h2>
+                            <p class="mb-3">Lorem ipsum dolor sit amet consecttur adipiscing elit. Pellentesque sagittis
+                                sit amet
+                                felis
+                                lobortis.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-card">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="assets/image/portfolio-details/1.png" alt="">
+                            <div class="p-date d-inline-flex">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.125 16.3125C1.125 17.2441 1.88086 18 2.8125 18H15.1875C16.1191 18 16.875 17.2441 16.875 16.3125V6.75H1.125V16.3125ZM12.375 9.42188C12.375 9.18984 12.5648 9 12.7969 9H14.2031C14.4352 9 14.625 9.18984 14.625 9.42188V10.8281C14.625 11.0602 14.4352 11.25 14.2031 11.25H12.7969C12.5648 11.25 12.375 11.0602 12.375 10.8281V9.42188ZM12.375 13.9219C12.375 13.6898 12.5648 13.5 12.7969 13.5H14.2031C14.4352 13.5 14.625 13.6898 14.625 13.9219V15.3281C14.625 15.5602 14.4352 15.75 14.2031 15.75H12.7969C12.5648 15.75 12.375 15.5602 12.375 15.3281V13.9219ZM7.875 9.42188C7.875 9.18984 8.06484 9 8.29688 9H9.70312C9.93516 9 10.125 9.18984 10.125 9.42188V10.8281C10.125 11.0602 9.93516 11.25 9.70312 11.25H8.29688C8.06484 11.25 7.875 11.0602 7.875 10.8281V9.42188ZM7.875 13.9219C7.875 13.6898 8.06484 13.5 8.29688 13.5H9.70312C9.93516 13.5 10.125 13.6898 10.125 13.9219V15.3281C10.125 15.5602 9.93516 15.75 9.70312 15.75H8.29688C8.06484 15.75 7.875 15.5602 7.875 15.3281V13.9219ZM3.375 9.42188C3.375 9.18984 3.56484 9 3.79688 9H5.20312C5.43516 9 5.625 9.18984 5.625 9.42188V10.8281C5.625 11.0602 5.43516 11.25 5.20312 11.25H3.79688C3.56484 11.25 3.375 11.0602 3.375 10.8281V9.42188ZM3.375 13.9219C3.375 13.6898 3.56484 13.5 3.79688 13.5H5.20312C5.43516 13.5 5.625 13.6898 5.625 13.9219V15.3281C5.625 15.5602 5.43516 15.75 5.20312 15.75H3.79688C3.56484 15.75 3.375 15.5602 3.375 15.3281V13.9219ZM15.1875 2.25H13.5V0.5625C13.5 0.253125 13.2469 0 12.9375 0H11.8125C11.5031 0 11.25 0.253125 11.25 0.5625V2.25H6.75V0.5625C6.75 0.253125 6.49687 0 6.1875 0H5.0625C4.75312 0 4.5 0.253125 4.5 0.5625V2.25H2.8125C1.88086 2.25 1.125 3.00586 1.125 3.9375V5.625H16.875V3.9375C16.875 3.00586 16.1191 2.25 15.1875 2.25Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>June 10, 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-description">
+                            <div class="d-flex user-intarantion">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.875 9C10.3605 9 12.375 6.98555 12.375 4.5C12.375 2.01445 10.3605 0 7.875 0C5.38945 0 3.375 2.01445 3.375 4.5C3.375 6.98555 5.38945 9 7.875 9ZM11.025 10.125H10.4379C9.65742 10.4836 8.78906 10.6875 7.875 10.6875C6.96094 10.6875 6.09609 10.4836 5.31211 10.125H4.725C2.11641 10.125 0 12.2414 0 14.85V16.3125C0 17.2441 0.755859 18 1.6875 18H14.0625C14.9941 18 15.75 17.2441 15.75 16.3125V14.85C15.75 12.2414 13.6336 10.125 11.025 10.125Z"
+                                                fill="#FF0000" />
+                                        </svg>
+                                    </span>
+                                    <span>Admin</span>
+
+                                </div>
+                                <div class="separetor"></div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_3130_2215)">
+                                                <path
+                                                    d="M13 7C13 4.2375 10.0906 2 6.5 2C2.90937 2 0 4.2375 0 7C0 8.07187 0.440625 9.05937 1.1875 9.875C0.76875 10.8187 0.078125 11.5687 0.06875 11.5781C0 11.65 -0.01875 11.7562 0.021875 11.85C0.0625 11.9437 0.15 12 0.25 12C1.39375 12 2.34062 11.6156 3.02187 11.2187C4.02812 11.7094 5.21875 12 6.5 12C10.0906 12 13 9.7625 13 7ZM16.8125 13.875C17.5594 13.0625 18 12.0719 18 11C18 8.90937 16.3281 7.11875 13.9594 6.37187C13.9875 6.57812 14 6.7875 14 7C14 10.3094 10.6344 13 6.5 13C6.1625 13 5.83437 12.975 5.50938 12.9406C6.49375 14.7375 8.80625 16 11.5 16C12.7812 16 13.9719 15.7125 14.9781 15.2187C15.6594 15.6156 16.6063 16 17.75 16C17.85 16 17.9406 15.9406 17.9781 15.85C18.0187 15.7594 18 15.6531 17.9312 15.5781C17.9219 15.5687 17.2313 14.8219 16.8125 13.875Z"
+                                                    fill="#FF0000" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3130_2215">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>(<span>0</span>) Comments</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h2><a href="" class="title mb-3">CD Lady Dior Mini
+                                    (Special) 08</a></h2>
+                            <p class="mb-3">Lorem ipsum dolor sit amet consecttur adipiscing elit. Pellentesque sagittis
+                                sit amet
+                                felis
+                                lobortis.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-card">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="assets/image/portfolio-details/1.png" alt="">
+                            <div class="p-date d-inline-flex">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.125 16.3125C1.125 17.2441 1.88086 18 2.8125 18H15.1875C16.1191 18 16.875 17.2441 16.875 16.3125V6.75H1.125V16.3125ZM12.375 9.42188C12.375 9.18984 12.5648 9 12.7969 9H14.2031C14.4352 9 14.625 9.18984 14.625 9.42188V10.8281C14.625 11.0602 14.4352 11.25 14.2031 11.25H12.7969C12.5648 11.25 12.375 11.0602 12.375 10.8281V9.42188ZM12.375 13.9219C12.375 13.6898 12.5648 13.5 12.7969 13.5H14.2031C14.4352 13.5 14.625 13.6898 14.625 13.9219V15.3281C14.625 15.5602 14.4352 15.75 14.2031 15.75H12.7969C12.5648 15.75 12.375 15.5602 12.375 15.3281V13.9219ZM7.875 9.42188C7.875 9.18984 8.06484 9 8.29688 9H9.70312C9.93516 9 10.125 9.18984 10.125 9.42188V10.8281C10.125 11.0602 9.93516 11.25 9.70312 11.25H8.29688C8.06484 11.25 7.875 11.0602 7.875 10.8281V9.42188ZM7.875 13.9219C7.875 13.6898 8.06484 13.5 8.29688 13.5H9.70312C9.93516 13.5 10.125 13.6898 10.125 13.9219V15.3281C10.125 15.5602 9.93516 15.75 9.70312 15.75H8.29688C8.06484 15.75 7.875 15.5602 7.875 15.3281V13.9219ZM3.375 9.42188C3.375 9.18984 3.56484 9 3.79688 9H5.20312C5.43516 9 5.625 9.18984 5.625 9.42188V10.8281C5.625 11.0602 5.43516 11.25 5.20312 11.25H3.79688C3.56484 11.25 3.375 11.0602 3.375 10.8281V9.42188ZM3.375 13.9219C3.375 13.6898 3.56484 13.5 3.79688 13.5H5.20312C5.43516 13.5 5.625 13.6898 5.625 13.9219V15.3281C5.625 15.5602 5.43516 15.75 5.20312 15.75H3.79688C3.56484 15.75 3.375 15.5602 3.375 15.3281V13.9219ZM15.1875 2.25H13.5V0.5625C13.5 0.253125 13.2469 0 12.9375 0H11.8125C11.5031 0 11.25 0.253125 11.25 0.5625V2.25H6.75V0.5625C6.75 0.253125 6.49687 0 6.1875 0H5.0625C4.75312 0 4.5 0.253125 4.5 0.5625V2.25H2.8125C1.88086 2.25 1.125 3.00586 1.125 3.9375V5.625H16.875V3.9375C16.875 3.00586 16.1191 2.25 15.1875 2.25Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>June 10, 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-description">
+                            <div class="d-flex user-intarantion">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.875 9C10.3605 9 12.375 6.98555 12.375 4.5C12.375 2.01445 10.3605 0 7.875 0C5.38945 0 3.375 2.01445 3.375 4.5C3.375 6.98555 5.38945 9 7.875 9ZM11.025 10.125H10.4379C9.65742 10.4836 8.78906 10.6875 7.875 10.6875C6.96094 10.6875 6.09609 10.4836 5.31211 10.125H4.725C2.11641 10.125 0 12.2414 0 14.85V16.3125C0 17.2441 0.755859 18 1.6875 18H14.0625C14.9941 18 15.75 17.2441 15.75 16.3125V14.85C15.75 12.2414 13.6336 10.125 11.025 10.125Z"
+                                                fill="#FF0000" />
+                                        </svg>
+                                    </span>
+                                    <span>Admin</span>
+
+                                </div>
+                                <div class="separetor"></div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_3130_2215)">
+                                                <path
+                                                    d="M13 7C13 4.2375 10.0906 2 6.5 2C2.90937 2 0 4.2375 0 7C0 8.07187 0.440625 9.05937 1.1875 9.875C0.76875 10.8187 0.078125 11.5687 0.06875 11.5781C0 11.65 -0.01875 11.7562 0.021875 11.85C0.0625 11.9437 0.15 12 0.25 12C1.39375 12 2.34062 11.6156 3.02187 11.2187C4.02812 11.7094 5.21875 12 6.5 12C10.0906 12 13 9.7625 13 7ZM16.8125 13.875C17.5594 13.0625 18 12.0719 18 11C18 8.90937 16.3281 7.11875 13.9594 6.37187C13.9875 6.57812 14 6.7875 14 7C14 10.3094 10.6344 13 6.5 13C6.1625 13 5.83437 12.975 5.50938 12.9406C6.49375 14.7375 8.80625 16 11.5 16C12.7812 16 13.9719 15.7125 14.9781 15.2187C15.6594 15.6156 16.6063 16 17.75 16C17.85 16 17.9406 15.9406 17.9781 15.85C18.0187 15.7594 18 15.6531 17.9312 15.5781C17.9219 15.5687 17.2313 14.8219 16.8125 13.875Z"
+                                                    fill="#FF0000" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3130_2215">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>(<span>0</span>) Comments</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h2><a href="" class="title mb-3">CD Lady Dior Mini
+                                    (Special) 08</a></h2>
+                            <p class="mb-3">Lorem ipsum dolor sit amet consecttur adipiscing elit. Pellentesque sagittis
+                                sit amet
+                                felis
+                                lobortis.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-card">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="assets/image/portfolio-details/1.png" alt="">
+                            <div class="p-date d-inline-flex">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.125 16.3125C1.125 17.2441 1.88086 18 2.8125 18H15.1875C16.1191 18 16.875 17.2441 16.875 16.3125V6.75H1.125V16.3125ZM12.375 9.42188C12.375 9.18984 12.5648 9 12.7969 9H14.2031C14.4352 9 14.625 9.18984 14.625 9.42188V10.8281C14.625 11.0602 14.4352 11.25 14.2031 11.25H12.7969C12.5648 11.25 12.375 11.0602 12.375 10.8281V9.42188ZM12.375 13.9219C12.375 13.6898 12.5648 13.5 12.7969 13.5H14.2031C14.4352 13.5 14.625 13.6898 14.625 13.9219V15.3281C14.625 15.5602 14.4352 15.75 14.2031 15.75H12.7969C12.5648 15.75 12.375 15.5602 12.375 15.3281V13.9219ZM7.875 9.42188C7.875 9.18984 8.06484 9 8.29688 9H9.70312C9.93516 9 10.125 9.18984 10.125 9.42188V10.8281C10.125 11.0602 9.93516 11.25 9.70312 11.25H8.29688C8.06484 11.25 7.875 11.0602 7.875 10.8281V9.42188ZM7.875 13.9219C7.875 13.6898 8.06484 13.5 8.29688 13.5H9.70312C9.93516 13.5 10.125 13.6898 10.125 13.9219V15.3281C10.125 15.5602 9.93516 15.75 9.70312 15.75H8.29688C8.06484 15.75 7.875 15.5602 7.875 15.3281V13.9219ZM3.375 9.42188C3.375 9.18984 3.56484 9 3.79688 9H5.20312C5.43516 9 5.625 9.18984 5.625 9.42188V10.8281C5.625 11.0602 5.43516 11.25 5.20312 11.25H3.79688C3.56484 11.25 3.375 11.0602 3.375 10.8281V9.42188ZM3.375 13.9219C3.375 13.6898 3.56484 13.5 3.79688 13.5H5.20312C5.43516 13.5 5.625 13.6898 5.625 13.9219V15.3281C5.625 15.5602 5.43516 15.75 5.20312 15.75H3.79688C3.56484 15.75 3.375 15.5602 3.375 15.3281V13.9219ZM15.1875 2.25H13.5V0.5625C13.5 0.253125 13.2469 0 12.9375 0H11.8125C11.5031 0 11.25 0.253125 11.25 0.5625V2.25H6.75V0.5625C6.75 0.253125 6.49687 0 6.1875 0H5.0625C4.75312 0 4.5 0.253125 4.5 0.5625V2.25H2.8125C1.88086 2.25 1.125 3.00586 1.125 3.9375V5.625H16.875V3.9375C16.875 3.00586 16.1191 2.25 15.1875 2.25Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>June 10, 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-description">
+                            <div class="d-flex user-intarantion">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.875 9C10.3605 9 12.375 6.98555 12.375 4.5C12.375 2.01445 10.3605 0 7.875 0C5.38945 0 3.375 2.01445 3.375 4.5C3.375 6.98555 5.38945 9 7.875 9ZM11.025 10.125H10.4379C9.65742 10.4836 8.78906 10.6875 7.875 10.6875C6.96094 10.6875 6.09609 10.4836 5.31211 10.125H4.725C2.11641 10.125 0 12.2414 0 14.85V16.3125C0 17.2441 0.755859 18 1.6875 18H14.0625C14.9941 18 15.75 17.2441 15.75 16.3125V14.85C15.75 12.2414 13.6336 10.125 11.025 10.125Z"
+                                                fill="#FF0000" />
+                                        </svg>
+                                    </span>
+                                    <span>Admin</span>
+
+                                </div>
+                                <div class="separetor"></div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_3130_2215)">
+                                                <path
+                                                    d="M13 7C13 4.2375 10.0906 2 6.5 2C2.90937 2 0 4.2375 0 7C0 8.07187 0.440625 9.05937 1.1875 9.875C0.76875 10.8187 0.078125 11.5687 0.06875 11.5781C0 11.65 -0.01875 11.7562 0.021875 11.85C0.0625 11.9437 0.15 12 0.25 12C1.39375 12 2.34062 11.6156 3.02187 11.2187C4.02812 11.7094 5.21875 12 6.5 12C10.0906 12 13 9.7625 13 7ZM16.8125 13.875C17.5594 13.0625 18 12.0719 18 11C18 8.90937 16.3281 7.11875 13.9594 6.37187C13.9875 6.57812 14 6.7875 14 7C14 10.3094 10.6344 13 6.5 13C6.1625 13 5.83437 12.975 5.50938 12.9406C6.49375 14.7375 8.80625 16 11.5 16C12.7812 16 13.9719 15.7125 14.9781 15.2187C15.6594 15.6156 16.6063 16 17.75 16C17.85 16 17.9406 15.9406 17.9781 15.85C18.0187 15.7594 18 15.6531 17.9312 15.5781C17.9219 15.5687 17.2313 14.8219 16.8125 13.875Z"
+                                                    fill="#FF0000" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3130_2215">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>(<span>0</span>) Comments</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h2><a href="" class="title mb-3">CD Lady Dior Mini
+                                    (Special) 08</a></h2>
+                            <p class="mb-3">Lorem ipsum dolor sit amet consecttur adipiscing elit. Pellentesque sagittis
+                                sit amet
+                                felis
+                                lobortis.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-card">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="assets/image/portfolio-details/1.png" alt="">
+                            <div class="p-date d-inline-flex">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.125 16.3125C1.125 17.2441 1.88086 18 2.8125 18H15.1875C16.1191 18 16.875 17.2441 16.875 16.3125V6.75H1.125V16.3125ZM12.375 9.42188C12.375 9.18984 12.5648 9 12.7969 9H14.2031C14.4352 9 14.625 9.18984 14.625 9.42188V10.8281C14.625 11.0602 14.4352 11.25 14.2031 11.25H12.7969C12.5648 11.25 12.375 11.0602 12.375 10.8281V9.42188ZM12.375 13.9219C12.375 13.6898 12.5648 13.5 12.7969 13.5H14.2031C14.4352 13.5 14.625 13.6898 14.625 13.9219V15.3281C14.625 15.5602 14.4352 15.75 14.2031 15.75H12.7969C12.5648 15.75 12.375 15.5602 12.375 15.3281V13.9219ZM7.875 9.42188C7.875 9.18984 8.06484 9 8.29688 9H9.70312C9.93516 9 10.125 9.18984 10.125 9.42188V10.8281C10.125 11.0602 9.93516 11.25 9.70312 11.25H8.29688C8.06484 11.25 7.875 11.0602 7.875 10.8281V9.42188ZM7.875 13.9219C7.875 13.6898 8.06484 13.5 8.29688 13.5H9.70312C9.93516 13.5 10.125 13.6898 10.125 13.9219V15.3281C10.125 15.5602 9.93516 15.75 9.70312 15.75H8.29688C8.06484 15.75 7.875 15.5602 7.875 15.3281V13.9219ZM3.375 9.42188C3.375 9.18984 3.56484 9 3.79688 9H5.20312C5.43516 9 5.625 9.18984 5.625 9.42188V10.8281C5.625 11.0602 5.43516 11.25 5.20312 11.25H3.79688C3.56484 11.25 3.375 11.0602 3.375 10.8281V9.42188ZM3.375 13.9219C3.375 13.6898 3.56484 13.5 3.79688 13.5H5.20312C5.43516 13.5 5.625 13.6898 5.625 13.9219V15.3281C5.625 15.5602 5.43516 15.75 5.20312 15.75H3.79688C3.56484 15.75 3.375 15.5602 3.375 15.3281V13.9219ZM15.1875 2.25H13.5V0.5625C13.5 0.253125 13.2469 0 12.9375 0H11.8125C11.5031 0 11.25 0.253125 11.25 0.5625V2.25H6.75V0.5625C6.75 0.253125 6.49687 0 6.1875 0H5.0625C4.75312 0 4.5 0.253125 4.5 0.5625V2.25H2.8125C1.88086 2.25 1.125 3.00586 1.125 3.9375V5.625H16.875V3.9375C16.875 3.00586 16.1191 2.25 15.1875 2.25Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>June 10, 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-description">
+                            <div class="d-flex user-intarantion">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.875 9C10.3605 9 12.375 6.98555 12.375 4.5C12.375 2.01445 10.3605 0 7.875 0C5.38945 0 3.375 2.01445 3.375 4.5C3.375 6.98555 5.38945 9 7.875 9ZM11.025 10.125H10.4379C9.65742 10.4836 8.78906 10.6875 7.875 10.6875C6.96094 10.6875 6.09609 10.4836 5.31211 10.125H4.725C2.11641 10.125 0 12.2414 0 14.85V16.3125C0 17.2441 0.755859 18 1.6875 18H14.0625C14.9941 18 15.75 17.2441 15.75 16.3125V14.85C15.75 12.2414 13.6336 10.125 11.025 10.125Z"
+                                                fill="#FF0000" />
+                                        </svg>
+                                    </span>
+                                    <span>Admin</span>
+
+                                </div>
+                                <div class="separetor"></div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_3130_2215)">
+                                                <path
+                                                    d="M13 7C13 4.2375 10.0906 2 6.5 2C2.90937 2 0 4.2375 0 7C0 8.07187 0.440625 9.05937 1.1875 9.875C0.76875 10.8187 0.078125 11.5687 0.06875 11.5781C0 11.65 -0.01875 11.7562 0.021875 11.85C0.0625 11.9437 0.15 12 0.25 12C1.39375 12 2.34062 11.6156 3.02187 11.2187C4.02812 11.7094 5.21875 12 6.5 12C10.0906 12 13 9.7625 13 7ZM16.8125 13.875C17.5594 13.0625 18 12.0719 18 11C18 8.90937 16.3281 7.11875 13.9594 6.37187C13.9875 6.57812 14 6.7875 14 7C14 10.3094 10.6344 13 6.5 13C6.1625 13 5.83437 12.975 5.50938 12.9406C6.49375 14.7375 8.80625 16 11.5 16C12.7812 16 13.9719 15.7125 14.9781 15.2187C15.6594 15.6156 16.6063 16 17.75 16C17.85 16 17.9406 15.9406 17.9781 15.85C18.0187 15.7594 18 15.6531 17.9312 15.5781C17.9219 15.5687 17.2313 14.8219 16.8125 13.875Z"
+                                                    fill="#FF0000" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3130_2215">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>(<span>0</span>) Comments</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h2><a href="" class="title mb-3">CD Lady Dior Mini
+                                    (Special) 08</a></h2>
+                            <p class="mb-3">Lorem ipsum dolor sit amet consecttur adipiscing elit. Pellentesque sagittis
+                                sit amet
+                                felis
+                                lobortis.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-card">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="assets/image/portfolio-details/1.png" alt="">
+                            <div class="p-date d-inline-flex">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.125 16.3125C1.125 17.2441 1.88086 18 2.8125 18H15.1875C16.1191 18 16.875 17.2441 16.875 16.3125V6.75H1.125V16.3125ZM12.375 9.42188C12.375 9.18984 12.5648 9 12.7969 9H14.2031C14.4352 9 14.625 9.18984 14.625 9.42188V10.8281C14.625 11.0602 14.4352 11.25 14.2031 11.25H12.7969C12.5648 11.25 12.375 11.0602 12.375 10.8281V9.42188ZM12.375 13.9219C12.375 13.6898 12.5648 13.5 12.7969 13.5H14.2031C14.4352 13.5 14.625 13.6898 14.625 13.9219V15.3281C14.625 15.5602 14.4352 15.75 14.2031 15.75H12.7969C12.5648 15.75 12.375 15.5602 12.375 15.3281V13.9219ZM7.875 9.42188C7.875 9.18984 8.06484 9 8.29688 9H9.70312C9.93516 9 10.125 9.18984 10.125 9.42188V10.8281C10.125 11.0602 9.93516 11.25 9.70312 11.25H8.29688C8.06484 11.25 7.875 11.0602 7.875 10.8281V9.42188ZM7.875 13.9219C7.875 13.6898 8.06484 13.5 8.29688 13.5H9.70312C9.93516 13.5 10.125 13.6898 10.125 13.9219V15.3281C10.125 15.5602 9.93516 15.75 9.70312 15.75H8.29688C8.06484 15.75 7.875 15.5602 7.875 15.3281V13.9219ZM3.375 9.42188C3.375 9.18984 3.56484 9 3.79688 9H5.20312C5.43516 9 5.625 9.18984 5.625 9.42188V10.8281C5.625 11.0602 5.43516 11.25 5.20312 11.25H3.79688C3.56484 11.25 3.375 11.0602 3.375 10.8281V9.42188ZM3.375 13.9219C3.375 13.6898 3.56484 13.5 3.79688 13.5H5.20312C5.43516 13.5 5.625 13.6898 5.625 13.9219V15.3281C5.625 15.5602 5.43516 15.75 5.20312 15.75H3.79688C3.56484 15.75 3.375 15.5602 3.375 15.3281V13.9219ZM15.1875 2.25H13.5V0.5625C13.5 0.253125 13.2469 0 12.9375 0H11.8125C11.5031 0 11.25 0.253125 11.25 0.5625V2.25H6.75V0.5625C6.75 0.253125 6.49687 0 6.1875 0H5.0625C4.75312 0 4.5 0.253125 4.5 0.5625V2.25H2.8125C1.88086 2.25 1.125 3.00586 1.125 3.9375V5.625H16.875V3.9375C16.875 3.00586 16.1191 2.25 15.1875 2.25Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>June 10, 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-description">
+                            <div class="d-flex user-intarantion">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.875 9C10.3605 9 12.375 6.98555 12.375 4.5C12.375 2.01445 10.3605 0 7.875 0C5.38945 0 3.375 2.01445 3.375 4.5C3.375 6.98555 5.38945 9 7.875 9ZM11.025 10.125H10.4379C9.65742 10.4836 8.78906 10.6875 7.875 10.6875C6.96094 10.6875 6.09609 10.4836 5.31211 10.125H4.725C2.11641 10.125 0 12.2414 0 14.85V16.3125C0 17.2441 0.755859 18 1.6875 18H14.0625C14.9941 18 15.75 17.2441 15.75 16.3125V14.85C15.75 12.2414 13.6336 10.125 11.025 10.125Z"
+                                                fill="#FF0000" />
+                                        </svg>
+                                    </span>
+                                    <span>Admin</span>
+
+                                </div>
+                                <div class="separetor"></div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_3130_2215)">
+                                                <path
+                                                    d="M13 7C13 4.2375 10.0906 2 6.5 2C2.90937 2 0 4.2375 0 7C0 8.07187 0.440625 9.05937 1.1875 9.875C0.76875 10.8187 0.078125 11.5687 0.06875 11.5781C0 11.65 -0.01875 11.7562 0.021875 11.85C0.0625 11.9437 0.15 12 0.25 12C1.39375 12 2.34062 11.6156 3.02187 11.2187C4.02812 11.7094 5.21875 12 6.5 12C10.0906 12 13 9.7625 13 7ZM16.8125 13.875C17.5594 13.0625 18 12.0719 18 11C18 8.90937 16.3281 7.11875 13.9594 6.37187C13.9875 6.57812 14 6.7875 14 7C14 10.3094 10.6344 13 6.5 13C6.1625 13 5.83437 12.975 5.50938 12.9406C6.49375 14.7375 8.80625 16 11.5 16C12.7812 16 13.9719 15.7125 14.9781 15.2187C15.6594 15.6156 16.6063 16 17.75 16C17.85 16 17.9406 15.9406 17.9781 15.85C18.0187 15.7594 18 15.6531 17.9312 15.5781C17.9219 15.5687 17.2313 14.8219 16.8125 13.875Z"
+                                                    fill="#FF0000" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3130_2215">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>(<span>0</span>) Comments</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h2><a href="" class="title mb-3">CD Lady Dior Mini
+                                    (Special) 08</a></h2>
+                            <p class="mb-3">Lorem ipsum dolor sit amet consecttur adipiscing elit. Pellentesque sagittis
+                                sit amet
+                                felis
+                                lobortis.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="portfolio-card">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="assets/image/portfolio-details/1.png" alt="">
+                            <div class="p-date d-inline-flex">
+                                <span>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.125 16.3125C1.125 17.2441 1.88086 18 2.8125 18H15.1875C16.1191 18 16.875 17.2441 16.875 16.3125V6.75H1.125V16.3125ZM12.375 9.42188C12.375 9.18984 12.5648 9 12.7969 9H14.2031C14.4352 9 14.625 9.18984 14.625 9.42188V10.8281C14.625 11.0602 14.4352 11.25 14.2031 11.25H12.7969C12.5648 11.25 12.375 11.0602 12.375 10.8281V9.42188ZM12.375 13.9219C12.375 13.6898 12.5648 13.5 12.7969 13.5H14.2031C14.4352 13.5 14.625 13.6898 14.625 13.9219V15.3281C14.625 15.5602 14.4352 15.75 14.2031 15.75H12.7969C12.5648 15.75 12.375 15.5602 12.375 15.3281V13.9219ZM7.875 9.42188C7.875 9.18984 8.06484 9 8.29688 9H9.70312C9.93516 9 10.125 9.18984 10.125 9.42188V10.8281C10.125 11.0602 9.93516 11.25 9.70312 11.25H8.29688C8.06484 11.25 7.875 11.0602 7.875 10.8281V9.42188ZM7.875 13.9219C7.875 13.6898 8.06484 13.5 8.29688 13.5H9.70312C9.93516 13.5 10.125 13.6898 10.125 13.9219V15.3281C10.125 15.5602 9.93516 15.75 9.70312 15.75H8.29688C8.06484 15.75 7.875 15.5602 7.875 15.3281V13.9219ZM3.375 9.42188C3.375 9.18984 3.56484 9 3.79688 9H5.20312C5.43516 9 5.625 9.18984 5.625 9.42188V10.8281C5.625 11.0602 5.43516 11.25 5.20312 11.25H3.79688C3.56484 11.25 3.375 11.0602 3.375 10.8281V9.42188ZM3.375 13.9219C3.375 13.6898 3.56484 13.5 3.79688 13.5H5.20312C5.43516 13.5 5.625 13.6898 5.625 13.9219V15.3281C5.625 15.5602 5.43516 15.75 5.20312 15.75H3.79688C3.56484 15.75 3.375 15.5602 3.375 15.3281V13.9219ZM15.1875 2.25H13.5V0.5625C13.5 0.253125 13.2469 0 12.9375 0H11.8125C11.5031 0 11.25 0.253125 11.25 0.5625V2.25H6.75V0.5625C6.75 0.253125 6.49687 0 6.1875 0H5.0625C4.75312 0 4.5 0.253125 4.5 0.5625V2.25H2.8125C1.88086 2.25 1.125 3.00586 1.125 3.9375V5.625H16.875V3.9375C16.875 3.00586 16.1191 2.25 15.1875 2.25Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>June 10, 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-description">
+                            <div class="d-flex user-intarantion">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.875 9C10.3605 9 12.375 6.98555 12.375 4.5C12.375 2.01445 10.3605 0 7.875 0C5.38945 0 3.375 2.01445 3.375 4.5C3.375 6.98555 5.38945 9 7.875 9ZM11.025 10.125H10.4379C9.65742 10.4836 8.78906 10.6875 7.875 10.6875C6.96094 10.6875 6.09609 10.4836 5.31211 10.125H4.725C2.11641 10.125 0 12.2414 0 14.85V16.3125C0 17.2441 0.755859 18 1.6875 18H14.0625C14.9941 18 15.75 17.2441 15.75 16.3125V14.85C15.75 12.2414 13.6336 10.125 11.025 10.125Z"
+                                                fill="#FF0000" />
+                                        </svg>
+                                    </span>
+                                    <span>Admin</span>
+
+                                </div>
+                                <div class="separetor"></div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_3130_2215)">
+                                                <path
+                                                    d="M13 7C13 4.2375 10.0906 2 6.5 2C2.90937 2 0 4.2375 0 7C0 8.07187 0.440625 9.05937 1.1875 9.875C0.76875 10.8187 0.078125 11.5687 0.06875 11.5781C0 11.65 -0.01875 11.7562 0.021875 11.85C0.0625 11.9437 0.15 12 0.25 12C1.39375 12 2.34062 11.6156 3.02187 11.2187C4.02812 11.7094 5.21875 12 6.5 12C10.0906 12 13 9.7625 13 7ZM16.8125 13.875C17.5594 13.0625 18 12.0719 18 11C18 8.90937 16.3281 7.11875 13.9594 6.37187C13.9875 6.57812 14 6.7875 14 7C14 10.3094 10.6344 13 6.5 13C6.1625 13 5.83437 12.975 5.50938 12.9406C6.49375 14.7375 8.80625 16 11.5 16C12.7812 16 13.9719 15.7125 14.9781 15.2187C15.6594 15.6156 16.6063 16 17.75 16C17.85 16 17.9406 15.9406 17.9781 15.85C18.0187 15.7594 18 15.6531 17.9312 15.5781C17.9219 15.5687 17.2313 14.8219 16.8125 13.875Z"
+                                                    fill="#FF0000" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_3130_2215">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <span>(<span>0</span>) Comments</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h2><a href="" class="title mb-3">CD Lady Dior Mini
+                                    (Special) 08</a></h2>
+                            <p class="mb-3">Lorem ipsum dolor sit amet consecttur adipiscing elit. Pellentesque sagittis
+                                sit amet
+                                felis
+                                lobortis.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="pagination d-flex justify-content-center">
+                <ul>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">→</a></li>
+                </ul>
+            </nav>
+
+
+        </section>
+        <!--  Portfolio card section end-->
+        <!-- Free Consultaion Start -->
+        <section class="bg-dark text-white text-center consultation-today-section"
+            style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/image/consultation-today.jpg') center/cover;">
+            <div class="consultation-today-container">
+                <h2 class="mb-4 title-1">Get Your Free Consultation Today</h2>
+                <p>
+                    Get a website that looks great and converts visitors. Choose the right digital solution for your
+                    business. Let’s create something fast, modern, and affordable.
+                </p>
+                <a href="#" class="contact-us-btn m-auto w-205">
+                    <img src="assets/image/contact-us.svg" /> Free Consultation
+                </a>
+            </div>
+        </section>
+        <!-- Free Consultaion End -->
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-2">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="py-2">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-3">Address</h6>
+                    <p class="py-2">
+                        House no 10, Road no 12, Jasimuddin, Sector 1, Uttara, Dhaka, Bangladesh.
+                    </p>
+                    <p class="py-2">+880 01851670403</p>
+                    <p class="py-2">contact@dnationsoft.com</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-3">Address 2</h6>
+                    <p class="py-2">Firoz Mansion, 1nd floor, Post code 7460, Noapara, Avayanagor, Jessore,
+                        Bangladesh.</p>
+                    <p class="py-2">+8801924329315</p>
+                    <p class="py-2">contact@dnationsoft.com</p>
+                </div>
+                <div class="col-lg-2 col-sm-6 footer-col d-flex justify-content-md-end mb-5 mb-lg-0">
+                    <div>
+                        <h6 class="mb-3">Follow Us</h6>
+                        <ul class="list-unstyled">
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/facebook.svg" />
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/x.svg" />
+                                    X
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/Instagram.svg" />
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/Linkedin.svg" />
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/youtube.svg" />
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5">
+                <img src="assets/image/footer-logo.svg" alt="Brand Logo" />
+            </div>
+        </div>
+        <div class="container border-top border-secondary pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 copy-right-text">
+                    <small>© 2024 Relume. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end policy">
+                    <a href="#" class="text-white text-decoration-none opacity-75 me-3"><small>Privacy
+                            Policy</small></a>
+                    <a href="#" class="text-white text-decoration-none opacity-75 me-3"><small>Terms of
+                            Service</small></a>
+                    <a href="#" class="text-white text-decoration-none opacity-75"><small>Cookie Settings</small></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const path = document.querySelectorAll(".tick path");
+        path.forEach((e) => {
+            setInterval(() => {
+                const length = e.getTotalLength();
+
+                // Initial state (pen start)
+                gsap.set(e, {
+                    strokeDasharray: length,
+                    strokeDashoffset: length
+                });
+
+                // Hand-draw animation timeline
+                gsap.timeline()
+                    .to(e, {
+                        strokeDashoffset: length * 0.55,
+                        duration: 0.35,
+                        ease: "power1.inOut"
+                    })
+                    .to(e, {
+                        strokeDashoffset: 0,
+                        duration: 0.45,
+                        ease: "power2.out"
+                    })
+                    .fromTo("#tick",
+                        { rotate: -3 },
+                        { rotate: 0, duration: 0.2, ease: "power1.out" },
+                        "-=0.3"
+                    );
+            }, 3000)
+
+
+        })
+
+
+
+    </script>
+
+
+
+    <script>
+
+        function updateDots(activeIndex) {
+            const dots = document.querySelectorAll('.pagination-dots .dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === activeIndex);
+            });
+        }
+
+        const dotsContainer = document.querySelector('.pagination-dots');
+        function createDots(swiper) {
+            const slideCount = swiper.slides.length;
+            dotsContainer.innerHTML = '';
+
+            for (let i = 0; i < slideCount; i++) {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                if (i === 0) {
+                    dot.classList.add('active');
+                }
+                dot.addEventListener('click', () => {
+                    swiper.slideToLoop(i);
+                });
+
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        const dots = document.querySelectorAll('.pagination-dots .dot');
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                swiper.slideToLoop(index);
+            });
+        });
+
+
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            on: {
+                init(swiper) {
+                    createDots(swiper);
+                    updateDots(swiper.realIndex);
+                },
+                slideChange(swiper) {
+                    updateDots(swiper.realIndex);
+                }
+            }
+        });
+
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const circles = document.querySelectorAll(".process-step");
+            let index = 0;
+
+            function runSequence() {
+                // Add active class to one circle at a time
+                circles[index].classList.add("active");
+
+                // Move to next circle
+                index++;
+
+                // If we reached the end, reset all and restart
+                if (index >= circles.length) {
+                    setTimeout(() => {
+                        circles.forEach(c => c.classList.remove("active")); // reset all to white
+                        index = 0;
+                        setTimeout(runSequence, 1200);
+                    }, 1200); // pause before reset
+
+                } else {
+                    setTimeout(runSequence, 1200); // delay between each step
+                }
+            }
+
+            runSequence();
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".successStories-cart");
+
+            cards.forEach(card => {
+                card.addEventListener("click", () => {
+                    // Close all other cards
+                    cards.forEach(c => c.classList.remove("active"));
+
+                    // Open the clicked card
+                    card.classList.add("active");
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

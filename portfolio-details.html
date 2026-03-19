@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/contact.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <title>Document</title>
+    <style>
+        .accordion {
+            max-width: 100%;
+        }
+
+        .accordion-item {
+            border-radius: 8px;
+        }
+
+        .accordion-body {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding-top: 0px !important;
+            color: #4C5254 !important;
+            line-height: 150%;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: unset !important;
+            box-shadow: unset !important;
+        }
+
+        .accordion-item {
+            border-top: 0 !important;
+        }
+
+        .accordion-header {
+            border-top: 1px solid #e6e6e6 !important;
+            border-radius: 8px !important;
+            overflow: hidden;
+        }
+
+        .accordion-item {
+            color: #666666;
+            border-radius: 8px !important;
+        }
+
+        .accordion-item>.accordion-header .accordion-button {
+            border-top-left-radius: unset !important;
+            border-top-right-radius: unset !important;
+            box-shadow: unset;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: var(--bs-accordion-btn-active-iconn) !important;
+        }
+
+        .accordion-button {
+            font-weight: 500;
+            color: #192023 !important;
+            font-size: clamp(16px, 2vw, 18px);
+            padding: 20px;
+        }
+
+        .quote-text {
+            color: #000;
+            font-size: clamp(16px, 2vw, 18px);
+            font-weight: 500;
+        }
+
+        header {
+            padding-top: 20px;
+            height: 271px;
+            position: unset !important;
+            background-color: transparent;
+            backdrop-filter: unset;
+            background-image: url('../assets/image/brudcumb-image.png');
+        }
+
+        @media screen and (max-width:768px) {
+            .accordion-button::after {
+                background-size: 16px;
+            }
+        }
+    </style>
+
+    <style>
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link {
+            color: white;
+            padding: 20px 0;
+            margin-left: 32px;
+        }
+
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link:hover,
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link.active {
+            background: unset;
+
+        }
+
+        .brudcumb-title {
+            margin-top: 60px;
+        }
+    </style>
+    <style>
+        .consultation-today-section {
+            padding: 175px 0;
+        }
+
+        .consultation-today-section h2 {
+            font-weight: 600;
+            line-height: 110.00000000000001%;
+            letter-spacing: 0%;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+
+        .consultation-today-section p {
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 70px;
+        }
+    </style>
+    <style>
+        .sidebar {
+            /* padding: 20px; */
+            /* padding-top: 0; */
+            border-radius: 8px;
+        }
+
+        /* .sidebar h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        } */
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 40px 0;
+        }
+
+        .service-list li a {
+            display: flex;
+            gap: 6px;
+            padding: 10px 0 15px;
+            cursor: pointer;
+            color: #5C5C5C;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid #DFDFDF;
+        }
+
+        .service-list li a:hover {
+            color: #ff0000;
+        }
+
+        .service-list li a.active {
+            color: var(--common-color);
+            font-weight: 600;
+        }
+
+        .arrow-right {
+            display: none;
+        }
+
+        .service-list li a.active .arrow-right {
+            display: block;
+        }
+
+        /* Lead Magnet */
+        .lead-magnet {
+            padding: 16px;
+            margin-bottom: 40px;
+            background-color: #FFE6E6;
+        }
+
+        .lead-magnet h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .lead-magnet p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #585858;
+        }
+
+        .btn-download {
+            background: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        /* Contact */
+        .contact-box {
+            text-align: center;
+            background: #ff0000;
+            color: #fff;
+            padding: 35px;
+        }
+
+        .contact-box h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .border-white {
+            border: 1px solid white;
+        }
+
+        .live-link {
+            color: #192023;
+            font-size: clamp(16px, 2vw, 18px);
+            font-weight: 500;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Example Code Start-->
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/image/logo-white.png" alt="logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                        <ul class="navbar-nav nav-item-text">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Web Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Digital Marketing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Graphic Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services Menu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Example Code End -->
+        </div>
+        <div class="d-flex w-100 justify-content-center align-items-center">
+            <h3 class="text-center text-white brudcumb-title title-3">Portfolio</h3>
+        </div>
+    </header>
+
+    <main>
+        <section class="container py-100">
+            <div class="row g-20">
+                <div class="col-md-3 col-sm-6 sidebar ">
+                    <div class="mb-4">
+                        <h2 class="section-title-common mb-4">Portfolio </h2>
+                        <ul class="service-list">
+                            <li class="">
+                                <a class="active" href=""><span class="arrow-right"><svg width="9" height="15"
+                                            viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.2495 8.2495L1.64967 14.8493L0 13.1997L5.775 7.42467L0 1.64967L1.64967 0L8.2495 6.59983C8.46822 6.81862 8.59108 7.11531 8.59108 7.42467C8.59108 7.73402 8.46822 8.03072 8.2495 8.2495Z"
+                                                fill="#FF0000" />
+                                        </svg>
+                                    </span> Web Development</a>
+                            </li>
+                            <li><a href="">Graphic Design</a></li>
+                            <li><a href="">UI/UX Design</a></li>
+                            <li><a href="">Digital Marketing</a></li>
+                        </ul>
+
+                        <!-- Lead Magnet Section -->
+                        <div class="lead-magnet">
+                            <h3>Lead Magnet</h3>
+                            <p>
+                                At Relo, we focus on clean design, strong structure, and responsive layouts
+                                to help your business stand out online. Custom Web Design & Development in Dhaka
+                            </p>
+                            <a href="#" class="contact-us-btn m-auto">
+                                <img src="assets/image/contact-us.svg"> Download
+                            </a>
+                        </div>
+
+                        <!-- Contact Section -->
+                        <div class="contact-box">
+                            <h3>Lets Talk</h3>
+                            <p class="mb-1">+088 01851670403</p>
+                            <p class="mb-30">contact@dnationsoft.com</p>
+                            <a href="#" class="contact-us-btn m-auto border-white">
+                                <img src="assets/image/contact-us.svg"> Whats App
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-sm-6">
+                    <div class="content">
+                        <h2 class="title-1 gradient-common mb-4">Food app design
+                        </h2>
+                        <p class="mb-4">Our services are designed to elevate your brand and enhance user experience.
+                            With tailored solutions in web design, graphic design, and digital marketing, we help you
+                            stand out in a competitive market.Our services are designed to elevate your brand and
+                            enhance user experience. With tailored solutions in web design, graphic design, and digital
+                            marketing, we help you stand out in a competitive market.</p>
+                        <p class="mb-5">Our services are designed to elevate your brand and enhance user experience.
+                            With tailored solutions in web design, graphic design, and digital marketing, we help you
+                            stand out in a competitive market.Our services are designed to elevate your brand and
+                            enhance user experience. With tailored solutions in web design, graphic design, and digital
+                            marketing, we help you stand out in a competitive market.</p>
+
+                        <img class="img-fluid" src="assets/image/services/1.png" alt="">
+
+                        <h4 class="title-4 mt-5 mb-4">Benefits</h4>
+                        <div class="d-flex gap-3 align-items-center mb-5 flex-wrap">
+                            <div class="d-flex gap-2 align-items-center">
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22 10.46L19.56 7.68L19.9 4L16.29 3.18L14.4 0L11 1.46L7.6 0L5.71 3.18L2.1 3.99L2.44 7.67L0 10.46L2.44 13.24L2.1 16.93L5.71 17.75L7.6 20.93L11 19.46L14.4 20.92L16.29 17.74L19.9 16.92L19.56 13.24L22 10.46ZM9 15.46L5 11.46L6.41 10.05L9 12.63L15.59 6.04L17 7.46L9 15.46Z"
+                                        fill="#212121" />
+                                </svg>
+                                <span>Stand Out from the Competition</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22 10.46L19.56 7.68L19.9 4L16.29 3.18L14.4 0L11 1.46L7.6 0L5.71 3.18L2.1 3.99L2.44 7.67L0 10.46L2.44 13.24L2.1 16.93L5.71 17.75L7.6 20.93L11 19.46L14.4 20.92L16.29 17.74L19.9 16.92L19.56 13.24L22 10.46ZM9 15.46L5 11.46L6.41 10.05L9 12.63L15.59 6.04L17 7.46L9 15.46Z"
+                                        fill="#212121" />
+                                </svg>
+                                <span>Lightning-Fast Performance</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22 10.46L19.56 7.68L19.9 4L16.29 3.18L14.4 0L11 1.46L7.6 0L5.71 3.18L2.1 3.99L2.44 7.67L0 10.46L2.44 13.24L2.1 16.93L5.71 17.75L7.6 20.93L11 19.46L14.4 20.92L16.29 17.74L19.9 16.92L19.56 13.24L22 10.46ZM9 15.46L5 11.46L6.41 10.05L9 12.63L15.59 6.04L17 7.46L9 15.46Z"
+                                        fill="#212121" />
+                                </svg>
+                                <span>100% Satisfaction Guaranteed</span>
+                            </div>
+                        </div>
+                        <h4 class="title-4 mb-4">Live link</h4>
+                        <div class="mb-5">
+                            <a href="mailto:dnationsoft.com" target="_blank" class="live-link">dnationsoft.com</a>
+                        </div>
+                        <a href="#" class="contact-us-btn m-auto">
+                            <img src="assets/image/contact-us.svg"> Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Free Consultaion Start -->
+        <section class="bg-dark text-white text-center consultation-today-section"
+            style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/image/consultation-today.jpg') center/cover;">
+            <div class="consultation-today-container">
+                <h2 class="mb-4 title-1">Get Your Free Consultation Today</h2>
+                <p>
+                    Get a website that looks great and converts visitors. Choose the right digital solution for your
+                    business. Let’s create something fast, modern, and affordable.
+                </p>
+                <a href="#" class="contact-us-btn m-auto w-205">
+                    <img src="assets/image/contact-us.svg" /> Free Consultation
+                </a>
+            </div>
+        </section>
+        <!-- Free Consultaion End -->
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-2">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="py-2">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-3">Address</h6>
+                    <p class="py-2">
+                        House no 10, Road no 12, Jasimuddin, Sector 1, Uttara, Dhaka, Bangladesh.
+                    </p>
+                    <p class="py-2">+880 01851670403</p>
+                    <p class="py-2">contact@dnationsoft.com</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-3">Address 2</h6>
+                    <p class="py-2">Firoz Mansion, 1nd floor, Post code 7460, Noapara, Avayanagor, Jessore,
+                        Bangladesh.</p>
+                    <p class="py-2">+8801924329315</p>
+                    <p class="py-2">contact@dnationsoft.com</p>
+                </div>
+                <div class="col-lg-2 col-sm-6 footer-col d-flex justify-content-md-end mb-5 mb-lg-0">
+                    <div>
+                        <h6 class="mb-3">Follow Us</h6>
+                        <ul class="list-unstyled">
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/facebook.svg" />
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/x.svg" />
+                                    X
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/Instagram.svg" />
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/Linkedin.svg" />
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/youtube.svg" />
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5">
+                <img src="assets/image/footer-logo.svg" alt="Brand Logo" />
+            </div>
+        </div>
+        <div class="container border-top border-secondary pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 copy-right-text">
+                    <small>© 2024 Relume. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end policy">
+                    <a href="#" class="text-white text-decoration-none opacity-75 me-3"><small>Privacy
+                            Policy</small></a>
+                    <a href="#" class="text-white text-decoration-none opacity-75 me-3"><small>Terms of
+                            Service</small></a>
+                    <a href="#" class="text-white text-decoration-none opacity-75"><small>Cookie Settings</small></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const path = document.querySelectorAll(".tick path");
+        path.forEach((e) => {
+            setInterval(() => {
+                const length = e.getTotalLength();
+
+                // Initial state (pen start)
+                gsap.set(e, {
+                    strokeDasharray: length,
+                    strokeDashoffset: length
+                });
+
+                // Hand-draw animation timeline
+                gsap.timeline()
+                    .to(e, {
+                        strokeDashoffset: length * 0.55,
+                        duration: 0.35,
+                        ease: "power1.inOut"
+                    })
+                    .to(e, {
+                        strokeDashoffset: 0,
+                        duration: 0.45,
+                        ease: "power2.out"
+                    })
+                    .fromTo("#tick",
+                        { rotate: -3 },
+                        { rotate: 0, duration: 0.2, ease: "power1.out" },
+                        "-=0.3"
+                    );
+            }, 3000)
+
+
+        })
+
+
+
+    </script>
+
+
+
+    <script>
+
+        function updateDots(activeIndex) {
+            const dots = document.querySelectorAll('.pagination-dots .dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === activeIndex);
+            });
+        }
+
+        const dotsContainer = document.querySelector('.pagination-dots');
+        function createDots(swiper) {
+            const slideCount = swiper.slides.length;
+            dotsContainer.innerHTML = '';
+
+            for (let i = 0; i < slideCount; i++) {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                if (i === 0) {
+                    dot.classList.add('active');
+                }
+                dot.addEventListener('click', () => {
+                    swiper.slideToLoop(i);
+                });
+
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        const dots = document.querySelectorAll('.pagination-dots .dot');
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                swiper.slideToLoop(index);
+            });
+        });
+
+
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            on: {
+                init(swiper) {
+                    createDots(swiper);
+                    updateDots(swiper.realIndex);
+                },
+                slideChange(swiper) {
+                    updateDots(swiper.realIndex);
+                }
+            }
+        });
+
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const circles = document.querySelectorAll(".process-step");
+            let index = 0;
+
+            function runSequence() {
+                // Add active class to one circle at a time
+                circles[index].classList.add("active");
+
+                // Move to next circle
+                index++;
+
+                // If we reached the end, reset all and restart
+                if (index >= circles.length) {
+                    setTimeout(() => {
+                        circles.forEach(c => c.classList.remove("active")); // reset all to white
+                        index = 0;
+                        setTimeout(runSequence, 1200);
+                    }, 1200); // pause before reset
+
+                } else {
+                    setTimeout(runSequence, 1200); // delay between each step
+                }
+            }
+
+            runSequence();
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".successStories-cart");
+
+            cards.forEach(card => {
+                card.addEventListener("click", () => {
+                    // Close all other cards
+                    cards.forEach(c => c.classList.remove("active"));
+
+                    // Open the clicked card
+                    card.classList.add("active");
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

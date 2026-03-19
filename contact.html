@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <title>Document</title>
+    <style>
+        .accordion {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        .accordion-item {
+            border-radius: 8px;
+        }
+
+        .accordion-body {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding-top: 0px !important;
+            color: #4C5254 !important;
+            line-height: 150%;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: unset !important;
+            box-shadow: unset !important;
+        }
+
+        .accordion-item {
+            border-top: 0 !important;
+        }
+
+        .accordion-header {
+            border-top: 1px solid #e6e6e6 !important;
+            border-radius: 8px !important;
+            overflow: hidden;
+        }
+
+        .accordion-item {
+            border-radius: 8px !important;
+        }
+
+        .accordion-item>.accordion-header .accordion-button {
+            border-top-left-radius: unset !important;
+            border-top-right-radius: unset !important;
+            box-shadow: unset;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: var(--bs-accordion-btn-active-iconn) !important;
+        }
+
+        .accordion-button {
+            font-weight: 700;
+            color: #192023 !important;
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        .quote-text {
+            color: #000;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        header {
+            padding-top: 20px;
+            height: 271px;
+            position: unset !important;
+            background-color: transparent;
+            backdrop-filter: unset;
+            background-image: url('../assets/image/brudcumb-image.png');
+        }
+    </style>
+
+    <style>
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link {
+            color: white;
+            padding: 20px 0;
+            margin-left: 32px;
+        }
+
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link:hover,
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link.active {
+            background: unset;
+
+        }
+
+        .brudcumb-title {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Example Code Start-->
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/image/logo-white.png" alt="logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                        <ul class="navbar-nav nav-item-text">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Web Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Digital Marketing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Graphic Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services Menu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Example Code End -->
+        </div>
+        <div class="d-flex w-100 justify-content-center align-items-center">
+            <h3 class="text-center text-white brudcumb-title title-3">Contact Us</h3>
+        </div>
+    </header>
+
+    <main>
+        <!-- contact section start -->
+        <section class="container py-120 contact-query-section ">
+            <div class="row g-md-5 align-items-start flex-column-reverse flex-lg-row">
+
+                <!-- Contact Info -->
+                <div class="col-lg-6">
+                    <h5 class="title-two mb-4 fade-in-observer contact-title">Address & Contact No</h5>
+
+                    <div class="contact-info-item d-flex gap-3 align-items-start mb-md-4">
+                        <span class="floating">
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="37" height="37" rx="18.5" fill="white" />
+                                <rect x="0.5" y="0.5" width="37" height="37" rx="18.5" stroke="#FF0000" />
+                                <path
+                                    d="M19.0026 18.6068C18.4777 18.6068 17.9743 18.3983 17.6031 18.0271C17.232 17.6559 17.0234 17.1525 17.0234 16.6276C17.0234 16.1027 17.232 15.5993 17.6031 15.2281C17.9743 14.857 18.4777 14.6484 19.0026 14.6484C19.5275 14.6484 20.0309 14.857 20.4021 15.2281C20.7733 15.5993 20.9818 16.1027 20.9818 16.6276C20.9818 16.8875 20.9306 17.1449 20.8311 17.385C20.7317 17.6251 20.5859 17.8433 20.4021 18.0271C20.2183 18.2109 20.0001 18.3567 19.76 18.4561C19.5199 18.5556 19.2625 18.6068 19.0026 18.6068ZM19.0026 11.0859C17.5329 11.0859 16.1233 11.6698 15.0841 12.7091C14.0448 13.7483 13.4609 15.1579 13.4609 16.6276C13.4609 20.7839 19.0026 26.9193 19.0026 26.9193C19.0026 26.9193 24.5443 20.7839 24.5443 16.6276C24.5443 15.1579 23.9604 13.7483 22.9212 12.7091C21.8819 11.6698 20.4723 11.0859 19.0026 11.0859Z"
+                                    fill="#FF0000" />
+                            </svg>
+                        </span>
+                        <p class="content-text mb-0">
+                            Room No. 203 (1st Floor), National Sports Council, Old Building, 62/3 Purana Paltan,
+                            Dhaka-1000, Bangladesh.
+                        </p>
+                    </div>
+
+                    <div class="contact-info-item d-flex gap-3 align-items-center mb-md-4">
+                        <span class="floating">
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="37" height="37" rx="18.5" fill="white" />
+                                <rect x="0.5" y="0.5" width="37" height="37" rx="18.5" stroke="#FF0000" />
+                                <path
+                                    d="M14.7408 18.0421C15.8808 20.2825 17.7175 22.1112 19.9579 23.2592L21.6996 21.5175C21.9133 21.3038 22.23 21.2325 22.5071 21.3275C23.3938 21.6204 24.3517 21.7788 25.3333 21.7788C25.7688 21.7788 26.125 22.135 26.125 22.5704V25.3333C26.125 25.7688 25.7688 26.125 25.3333 26.125C17.8996 26.125 11.875 20.1004 11.875 12.6667C11.875 12.2312 12.2312 11.875 12.6667 11.875H15.4375C15.8729 11.875 16.2292 12.2312 16.2292 12.6667C16.2292 13.6562 16.3875 14.6063 16.6804 15.4929C16.7675 15.77 16.7042 16.0788 16.4825 16.3004L14.7408 18.0421Z"
+                                    fill="#FF0000" />
+                            </svg>
+                        </span>
+                        <a href="tel:+8801336097353" class="content-text mb-0">
+                            +880 1336-097353
+                        </a>
+                    </div>
+
+                    <div class="contact-info-item d-flex gap-3 align-items-center mb-md-4">
+                        <span class="floating">
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="37" height="37" rx="18.5" fill="white" />
+                                <rect x="0.5" y="0.5" width="37" height="37" rx="18.5" stroke="#FF0000" />
+                                <path
+                                    d="M25.3359 12.6641H12.6693C11.7984 12.6641 11.0939 13.3766 11.0939 14.2474L11.0859 23.7474C11.0859 24.6182 11.7984 25.3307 12.6693 25.3307H25.3359C26.2068 25.3307 26.9193 24.6182 26.9193 23.7474V14.2474C26.9193 13.3766 26.2068 12.6641 25.3359 12.6641ZM25.3359 15.8307L19.0026 19.7891L12.6693 15.8307V14.2474L19.0026 18.2057L25.3359 14.2474V15.8307Z"
+                                    fill="#FF0000" />
+                            </svg>
+                        </span>
+                        <a href="mailto:bdnpc@yahoo.com" class="content-text mb-0">
+                            bdnpc@yahoo.com
+                        </a>
+                    </div>
+
+                    <div class="social-section pt-5 pb-md-0 pb-5">
+                        <h6 class="title-two mb-4 fade-in-observer contact-title">Social Media</h6>
+                        <div class="d-flex gap-3">
+                            <a href="#" target="_blank" class="social-icon">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.7321 9L12.1768 6.10437H9.39641V4.22531C9.39641 3.43313 9.7848 2.66094 11.03 2.66094H12.294V0.195625C12.294 0.195625 11.147 0 10.0503 0C7.7606 0 6.26394 1.38688 6.26394 3.8975V6.10437H3.71875V9H6.26394V16H9.39641V9H11.7321Z"
+                                        fill="#FF0000" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="social-icon">
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.0103 3.41172C5.02143 3.41172 3.4172 5.01484 3.4172 7.00234C3.4172 8.98984 5.02143 10.593 7.0103 10.593C8.99917 10.593 10.6034 8.98984 10.6034 7.00234C10.6034 5.01484 8.99917 3.41172 7.0103 3.41172ZM7.0103 9.33672C5.72504 9.33672 4.67431 8.28984 4.67431 7.00234C4.67431 5.71484 5.72191 4.66797 7.0103 4.66797C8.29868 4.66797 9.34628 5.71484 9.34628 7.00234C9.34628 8.28984 8.29556 9.33672 7.0103 9.33672V9.33672ZM11.5884 3.26484C11.5884 3.73047 11.2132 4.10234 10.7504 4.10234C10.2844 4.10234 9.9123 3.72734 9.9123 3.26484C9.9123 2.80234 10.2876 2.42734 10.7504 2.42734C11.2132 2.42734 11.5884 2.80234 11.5884 3.26484ZM13.9682 4.11484C13.9151 2.99297 13.6586 1.99922 12.8362 1.18047C12.0169 0.361719 11.0224 0.105469 9.89979 0.0492187C8.74274 -0.0164062 5.27473 -0.0164062 4.11768 0.0492187C2.99816 0.102344 2.00372 0.358594 1.18128 1.17734C0.358841 1.99609 0.105541 2.98984 0.0492527 4.11172C-0.0164176 5.26797 -0.0164176 8.73359 0.0492527 9.88984C0.102414 11.0117 0.358841 12.0055 1.18128 12.8242C2.00372 13.643 2.99503 13.8992 4.11768 13.9555C5.27473 14.0211 8.74274 14.0211 9.89979 13.9555C11.0224 13.9023 12.0169 13.6461 12.8362 12.8242C13.6555 12.0055 13.9119 11.0117 13.9682 9.88984C14.0339 8.73359 14.0339 5.27109 13.9682 4.11484V4.11484ZM12.4734 11.1305C12.2295 11.743 11.7573 12.2148 11.1413 12.4617C10.2188 12.8273 8.02975 12.743 7.0103 12.743C5.99084 12.743 3.79871 12.8242 2.87933 12.4617C2.2664 12.218 1.7942 11.7461 1.54716 11.1305C1.18128 10.2086 1.26572 8.02109 1.26572 7.00234C1.26572 5.98359 1.18441 3.79297 1.54716 2.87422C1.79108 2.26172 2.26328 1.78984 2.87933 1.54297C3.80184 1.17734 5.99084 1.26172 7.0103 1.26172C8.02975 1.26172 10.2219 1.18047 11.1413 1.54297C11.7542 1.78672 12.2264 2.25859 12.4734 2.87422C12.8393 3.79609 12.7549 5.98359 12.7549 7.00234C12.7549 8.02109 12.8393 10.2117 12.4734 11.1305Z"
+                                        fill="#FF0000" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="social-icon">
+                                <svg width="17" height="13" viewBox="0 0 17 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.3652 3.23856C14.3754 3.38069 14.3754 3.52284 14.3754 3.66497C14.3754 7.99997 11.0736 12.9949 5.039 12.9949C3.17985 12.9949 1.45278 12.4568 0 11.5228C0.264151 11.5533 0.518107 11.5634 0.792421 11.5634C2.32645 11.5634 3.73861 11.0457 4.86629 10.1624C3.42367 10.132 2.21471 9.18781 1.79818 7.88831C2.00138 7.91875 2.20455 7.93906 2.41792 7.93906C2.71252 7.93906 3.00716 7.89844 3.28145 7.82741C1.77788 7.52281 0.650167 6.20303 0.650167 4.60913V4.56853C1.087 4.81219 1.595 4.96447 2.13341 4.98475C1.24955 4.39591 0.670493 3.39084 0.670493 2.25378C0.670493 1.64466 0.833011 1.08628 1.11749 0.598969C2.73282 2.58881 5.1609 3.88828 7.88355 4.03044C7.83277 3.78678 7.80228 3.533 7.80228 3.27919C7.80228 1.47206 9.26522 0 11.0837 0C12.0285 0 12.8819 0.395938 13.4813 1.03553C14.2229 0.893406 14.9341 0.619281 15.564 0.243656C15.3201 1.00509 14.802 1.64469 14.1213 2.05075C14.7817 1.97972 15.4217 1.79694 16.011 1.54316C15.564 2.19287 15.0052 2.77153 14.3652 3.23856V3.23856Z"
+                                        fill="#FF0000" />
+                                </svg>
+
+                            </a>
+                            <a href="#" target="_blank" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.13591 13.9997H0.231409V4.65281H3.13591V13.9997ZM1.6821 3.37781C0.753331 3.37781 0 2.60906 0 1.68094C6.6477e-09 1.23513 0.17722 0.807572 0.492674 0.492335C0.808129 0.177098 1.23598 0 1.6821 0C2.12822 0 2.55606 0.177098 2.87152 0.492335C3.18697 0.807572 3.36419 1.23513 3.36419 1.68094C3.36419 2.60906 2.61055 3.37781 1.6821 3.37781ZM14.0065 13.9997H11.1083V9.44969C11.1083 8.36531 11.0864 6.97469 9.59817 6.97469C8.08807 6.97469 7.85666 8.15281 7.85666 9.37156V13.9997H4.95529V4.65281H7.74096V5.92781H7.78161C8.16938 5.19344 9.11659 4.41844 10.5298 4.41844C13.4693 4.41844 14.0096 6.35281 14.0096 8.86531V13.9997H14.0065Z"
+                                        fill="#FF0000" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Query Form -->
+                <div class="col-lg-6 mb-5 mb-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <h5 class="qurey mb-3 fade-in-observer">Query</h5>
+                                <p class="content-text mb-0 fade-in-observer">If you have any query about us then you
+                                    can direct message from here.</p>
+                            </div>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="Email (Required)"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" id="description" rows="4"
+                                        placeholder="Descriptions"></textarea>
+                                </div>
+                                <!-- <button type="submit" class="btn btn-primary w-100 py-3 rounded-3 ">
+                                    <span>Send Message</span>
+                                </button> -->
+                                <button type="submit" class="btn  w-100 py-3 btn-slide-fill">
+                                    <span>Send Message</span>
+                                </button>
+                            </form>
+                            <div id="formMessage" class="mt-3"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Contact Section End -->
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-2">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="py-2">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-3">Address</h6>
+                    <p class="py-2">
+                        House no 10, Road no 12, Jasimuddin, Sector 1, Uttara, Dhaka, Bangladesh.
+                    </p>
+                    <p class="py-2">+880 01851670403</p>
+                    <p class="py-2">contact@dnationsoft.com</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-3">Address 2</h6>
+                    <p class="py-2">Firoz Mansion, 1nd floor, Post code 7460, Noapara, Avayanagor, Jessore,
+                        Bangladesh.</p>
+                    <p class="py-2">+8801924329315</p>
+                    <p class="py-2">contact@dnationsoft.com</p>
+                </div>
+                <div class="col-lg-2 col-sm-6 footer-col d-flex justify-content-md-end mb-5 mb-lg-0">
+                    <div>
+                        <h6 class="mb-3">Follow Us</h6>
+                        <ul class="list-unstyled">
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/facebook.svg" />
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/x.svg" />
+                                    X
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/Instagram.svg" />
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/Linkedin.svg" />
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/youtube.svg" />
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5">
+                <img src="assets/image/footer-logo.svg" alt="Brand Logo" />
+            </div>
+        </div>
+        <div class="container border-top border-secondary pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 copy-right-text">
+                    <small>© 2024 Relume. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end policy">
+                    <a href="#" class="text-white text-decoration-none opacity-75 me-3"><small>Privacy
+                            Policy</small></a>
+                    <a href="#" class="text-white text-decoration-none opacity-75 me-3"><small>Terms of
+                            Service</small></a>
+                    <a href="#" class="text-white text-decoration-none opacity-75"><small>Cookie Settings</small></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const path = document.querySelectorAll(".tick path");
+        path.forEach((e) => {
+            setInterval(() => {
+                const length = e.getTotalLength();
+
+                // Initial state (pen start)
+                gsap.set(e, {
+                    strokeDasharray: length,
+                    strokeDashoffset: length
+                });
+
+                // Hand-draw animation timeline
+                gsap.timeline()
+                    .to(e, {
+                        strokeDashoffset: length * 0.55,
+                        duration: 0.35,
+                        ease: "power1.inOut"
+                    })
+                    .to(e, {
+                        strokeDashoffset: 0,
+                        duration: 0.45,
+                        ease: "power2.out"
+                    })
+                    .fromTo("#tick",
+                        { rotate: -3 },
+                        { rotate: 0, duration: 0.2, ease: "power1.out" },
+                        "-=0.3"
+                    );
+            }, 3000)
+
+
+        })
+
+
+
+    </script>
+
+
+
+    <script>
+
+        function updateDots(activeIndex) {
+            const dots = document.querySelectorAll('.pagination-dots .dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === activeIndex);
+            });
+        }
+
+        const dotsContainer = document.querySelector('.pagination-dots');
+        function createDots(swiper) {
+            const slideCount = swiper.slides.length;
+            dotsContainer.innerHTML = '';
+
+            for (let i = 0; i < slideCount; i++) {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                if (i === 0) {
+                    dot.classList.add('active');
+                }
+                dot.addEventListener('click', () => {
+                    swiper.slideToLoop(i);
+                });
+
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        const dots = document.querySelectorAll('.pagination-dots .dot');
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                swiper.slideToLoop(index);
+            });
+        });
+
+
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            on: {
+                init(swiper) {
+                    createDots(swiper);
+                    updateDots(swiper.realIndex);
+                },
+                slideChange(swiper) {
+                    updateDots(swiper.realIndex);
+                }
+            }
+        });
+
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const circles = document.querySelectorAll(".process-step");
+            let index = 0;
+
+            function runSequence() {
+                // Add active class to one circle at a time
+                circles[index].classList.add("active");
+
+                // Move to next circle
+                index++;
+
+                // If we reached the end, reset all and restart
+                if (index >= circles.length) {
+                    setTimeout(() => {
+                        circles.forEach(c => c.classList.remove("active")); // reset all to white
+                        index = 0;
+                        setTimeout(runSequence, 1200);
+                    }, 1200); // pause before reset
+
+                } else {
+                    setTimeout(runSequence, 1200); // delay between each step
+                }
+            }
+
+            runSequence();
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".successStories-cart");
+
+            cards.forEach(card => {
+                card.addEventListener("click", () => {
+                    // Close all other cards
+                    cards.forEach(c => c.classList.remove("active"));
+
+                    // Open the clicked card
+                    card.classList.add("active");
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

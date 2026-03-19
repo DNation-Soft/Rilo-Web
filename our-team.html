@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <title>Document</title>
+    <style>
+        .accordion {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        .accordion-item {
+            border-radius: 8px;
+        }
+
+        .accordion-body {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding-top: 0px !important;
+            color: #4C5254 !important;
+            line-height: 150%;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: unset !important;
+            box-shadow: unset !important;
+        }
+
+        .accordion-item {
+            border-top: 0 !important;
+        }
+
+        .accordion-header {
+            border-top: 1px solid #e6e6e6 !important;
+            border-radius: 8px !important;
+            overflow: hidden;
+        }
+
+        .accordion-item {
+            border-radius: 8px !important;
+        }
+
+        .accordion-item>.accordion-header .accordion-button {
+            border-top-left-radius: unset !important;
+            border-top-right-radius: unset !important;
+            box-shadow: unset;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: var(--bs-accordion-btn-active-iconn) !important;
+        }
+
+        .accordion-button {
+            font-weight: 700;
+            color: #192023 !important;
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        .quote-text {
+            color: #000;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        header {
+            padding-top: 20px;
+            height: 271px;
+            position: unset !important;
+            background-color: transparent;
+            backdrop-filter: unset;
+            background-image: url('../assets/image/brudcumb-image.png');
+        }
+    </style>
+
+    <style>
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link {
+            color: white;
+            padding: 20px 0;
+            margin-left: 32px;
+        }
+
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link:hover,
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link.active {
+            background: unset;
+
+        }
+
+        .brudcumb-title {
+            margin-top: 60px;
+        }
+    </style>
+    <style>
+        .team-title {
+            font-size: 30px;
+            color: #353535;
+            font-weight: 700;
+        }
+
+        .team-card-title {
+            font-size: clamp(20px, 2vw, 24px);
+            font-weight: 600;
+            background: linear-gradient(90deg, #003763 24.59%, #FF0000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .team-content p {
+            font-size: 18px;
+        }
+
+        section.dark {
+            background-color: #000000;
+        }
+
+        .team-card-body {
+            padding: 16px;
+        }
+
+        .team-card-info .team-card-title {
+            font-size: clamp(16px, 2vw, 20px);
+            font-weight: 600;
+        }
+
+        .team-card-info {
+            margin-top: 16px;
+            background-color: #E6E6E6;
+            padding: 36px 16px;
+            text-align: center;
+        }
+
+        .team-card-info p {
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        .team-card-body {
+            max-width: 302px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Example Code Start-->
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/image/logo-white.png" alt="logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                        <ul class="navbar-nav nav-item-text">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Web Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Digital Marketing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Graphic Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services Menu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Example Code End -->
+        </div>
+        <div class="d-flex w-100 justify-content-center align-items-center">
+            <h3 class="text-center text-white brudcumb-title title-3">Our team</h3>
+        </div>
+    </header>
+
+    <main>
+        <!-- our leader section start -->
+        <section class="container pt-120 pb-80">
+            <div class="">
+                <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1 g-5 justify-content-center">
+                    <div class="col">
+                        <div class="team-content">
+                            <h4 class="team-title mb-3 ">Our Leaders</h4>
+                            <p>Our process is simple, transparent, and focused on your business goals. We plan, design,
+                                develop,
+                                and
+                                deliver with client Feedback. We turn your ideas into real results with an easy and
+                                effective
+                                workflow.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center text-md-start">
+                            <img class="img-fluid" src="assets/image/our-team/team-leader/1.png" alt="">
+                            <h5 class="team-card-title mt-5">Syed ibrahim eartaza</h5>
+                            <p class="text-center mt-1">SEO of RILO</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center text-md-start">
+                            <img src="assets/image/our-team/team-leader/2.png" alt="">
+                            <div class="mt-5">
+                                <h5 class="team-card-title">Syed ibrahim eartaza</h5>
+                                <p class="text-center mt-1">SEO of RILO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-center text-md-start">
+                            <img src="assets/image/our-team/team-leader/3.png" alt="">
+                            <h5 class="team-card-title mt-5">Syed ibrahim eartaza</h5>
+                            <p class="text-center mt-1">SEO of RILO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our leader section end-->
+        <!-- Meet Our Team Start -->
+        <section class="py-120 dark">
+            <div class="container">
+                <div class="text-center text-white">
+                    <h4 class="team-title mb-3 text-white">Meet Our Team</h4>
+                    <p>Our process is simple, transparent, and focused on your business goals. We plan, design, develop,
+                        and
+                        deliver with client Feedback. We turn your ideas into real results with an easy and effective
+                        workflow.
+                    </p>
+                </div>
+                <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-4 pt-120 justify-content-center">
+                    <div class="col">
+                        <div class="team-card-body bg-white">
+                            <div class="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                            </div>
+
+                            <div class="team-card-info">
+                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
+                                    <p>SEO of RILO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="team-card-body bg-white">
+                            <div class="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                            </div>
+
+                            <div class="team-card-info">
+                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
+                                    <p>SEO of RILO</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="team-card-body bg-white">
+                            <div class="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                            </div>
+
+                            <div class="team-card-info">
+                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
+                                    <p>SEO of RILO</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="team-card-body bg-white">
+                            <div class="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                            </div>
+
+                            <div class="team-card-info">
+                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
+                                    <p>SEO of RILO</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="team-card-body bg-white">
+                            <div class="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                            </div>
+
+                            <div class="team-card-info">
+                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
+                                    <p>SEO of RILO</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="team-card-body bg-white">
+                            <div class="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                            </div>
+
+                            <div class="team-card-info">
+                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
+                                    <p>SEO of RILO</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="team-card-body bg-white">
+                            <div class="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                            </div>
+
+                            <div class="team-card-info">
+                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
+                                    <p>SEO of RILO</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="team-card-body bg-white">
+                            <div class="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                            </div>
+
+                            <div class="team-card-info">
+                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
+                                    <p>SEO of RILO</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Meet Our Team End-->
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-2">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="py-2">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-3">Address</h6>
+                    <p class="py-2">
+                        House no 10, Road no 12, Jasimuddin, Sector 1, Uttara, Dhaka, Bangladesh.
+                    </p>
+                    <p class="py-2">+880 01851670403</p>
+                    <p class="py-2">contact@dnationsoft.com</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
+                    <h6 class="mb-3">Address 2</h6>
+                    <p class="py-2">Firoz Mansion, 1nd floor, Post code 7460, Noapara, Avayanagor, Jessore,
+                        Bangladesh.</p>
+                    <p class="py-2">+8801924329315</p>
+                    <p class="py-2">contact@dnationsoft.com</p>
+                </div>
+                <div class="col-lg-2 col-sm-6 footer-col d-flex justify-content-md-end mb-5 mb-lg-0">
+                    <div>
+                        <h6 class="mb-3">Follow Us</h6>
+                        <ul class="list-unstyled">
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/facebook.svg" />
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/x.svg" />
+                                    X
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/Instagram.svg" />
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/Linkedin.svg" />
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3">
+                                    <img src="assets/image/youtube.svg" />
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5">
+                <img src="assets/image/footer-logo.svg" alt="Brand Logo" />
+            </div>
+        </div>
+        <div class="container border-top border-secondary pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 copy-right-text">
+                    <small>© 2024 Relume. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end policy">
+                    <a href="#" class="text-white text-decoration-none opacity-75 me-3"><small>Privacy
+                            Policy</small></a>
+                    <a href="#" class="text-white text-decoration-none opacity-75 me-3"><small>Terms of
+                            Service</small></a>
+                    <a href="#" class="text-white text-decoration-none opacity-75"><small>Cookie Settings</small></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const path = document.querySelectorAll(".tick path");
+        path.forEach((e) => {
+            setInterval(() => {
+                const length = e.getTotalLength();
+
+                // Initial state (pen start)
+                gsap.set(e, {
+                    strokeDasharray: length,
+                    strokeDashoffset: length
+                });
+
+                // Hand-draw animation timeline
+                gsap.timeline()
+                    .to(e, {
+                        strokeDashoffset: length * 0.55,
+                        duration: 0.35,
+                        ease: "power1.inOut"
+                    })
+                    .to(e, {
+                        strokeDashoffset: 0,
+                        duration: 0.45,
+                        ease: "power2.out"
+                    })
+                    .fromTo("#tick",
+                        { rotate: -3 },
+                        { rotate: 0, duration: 0.2, ease: "power1.out" },
+                        "-=0.3"
+                    );
+            }, 3000)
+
+
+        })
+
+
+
+    </script>
+
+
+
+    <script>
+
+        function updateDots(activeIndex) {
+            const dots = document.querySelectorAll('.pagination-dots .dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === activeIndex);
+            });
+        }
+
+        const dotsContainer = document.querySelector('.pagination-dots');
+        function createDots(swiper) {
+            const slideCount = swiper.slides.length;
+            dotsContainer.innerHTML = '';
+
+            for (let i = 0; i < slideCount; i++) {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                if (i === 0) {
+                    dot.classList.add('active');
+                }
+                dot.addEventListener('click', () => {
+                    swiper.slideToLoop(i);
+                });
+
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        const dots = document.querySelectorAll('.pagination-dots .dot');
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                swiper.slideToLoop(index);
+            });
+        });
+
+
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            on: {
+                init(swiper) {
+                    createDots(swiper);
+                    updateDots(swiper.realIndex);
+                },
+                slideChange(swiper) {
+                    updateDots(swiper.realIndex);
+                }
+            }
+        });
+
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const circles = document.querySelectorAll(".process-step");
+            let index = 0;
+
+            function runSequence() {
+                // Add active class to one circle at a time
+                circles[index].classList.add("active");
+
+                // Move to next circle
+                index++;
+
+                // If we reached the end, reset all and restart
+                if (index >= circles.length) {
+                    setTimeout(() => {
+                        circles.forEach(c => c.classList.remove("active")); // reset all to white
+                        index = 0;
+                        setTimeout(runSequence, 1200);
+                    }, 1200); // pause before reset
+
+                } else {
+                    setTimeout(runSequence, 1200); // delay between each step
+                }
+            }
+
+            runSequence();
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".successStories-cart");
+
+            cards.forEach(card => {
+                card.addEventListener("click", () => {
+                    // Close all other cards
+                    cards.forEach(c => c.classList.remove("active"));
+
+                    // Open the clicked card
+                    card.classList.add("active");
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

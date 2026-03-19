@@ -11,11 +11,72 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
     <title>Document</title>
+    <style>
+        .accordion {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        .accordion-item {
+            border-radius: 8px;
+        }
+
+        .accordion-body {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding-top: 0px !important;
+            color: #4C5254 !important;
+            line-height: 150%;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: unset !important;
+            box-shadow: unset !important;
+        }
+
+        .accordion-item {
+            border-top: 0 !important;
+        }
+
+        .accordion-header {
+            border-top: 1px solid #e6e6e6 !important;
+            border-radius: 8px !important;
+            overflow: hidden;
+        }
+
+        .accordion-item {
+            border-radius: 8px !important;
+        }
+
+        .accordion-item>.accordion-header .accordion-button {
+            border-top-left-radius: unset !important;
+            border-top-right-radius: unset !important;
+            box-shadow: unset;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: var(--bs-accordion-btn-active-iconn) !important;
+        }
+
+        .accordion-button {
+            font-weight: 700;
+            color: #192023 !important;
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        .quote-text {
+            color: #000;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,7 +86,7 @@
             <nav class="navbar navbar-expand-lg p-0">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="./assets/image/logo.svg" alt="logo" />
+                        <img src="assets/image/logo.svg" alt="logo" />
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +115,8 @@
     </header>
 
     <main>
+
+        <!-- Banner section start -->
         <section class="banner">
             <div class="container">
                 <div class="hero-section d-flex align-items-center text-center text-white">
@@ -64,21 +127,21 @@
                                     <div class="clutch-badge">
                                         <div class="badge rounded-pill border px-3 py-2 d-flex gap-13px">
                                             <div class="clutch">
-                                                <img src="./assets/image/clutch.svg" />
+                                                <img src="assets/image/clutch.svg" />
                                             </div>
                                             <div class="d-flex gap-4px">
-                                                <img src="./assets/image/star.svg" />
-                                                <img src="./assets/image/star.svg" />
-                                                <img src="./assets/image/star.svg" />
-                                                <img src="./assets/image/star.svg" />
-                                                <img src="./assets/image/star.svg" />
+                                                <img src="assets/image/star.svg" />
+                                                <img src="assets/image/star.svg" />
+                                                <img src="assets/image/star.svg" />
+                                                <img src="assets/image/star.svg" />
+                                                <img src="assets/image/star.svg" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <h1 class="display-4 fw-bold mb-3 banner-main-heading">
-                                    We Don't Just Design Websites – We Build Businesses.
+                                    Ready & Custom Website Design & Development <br> Company in Bangladesh
                                 </h1>
 
                                 <p class="lead mb-5 px-md-5 banner-main-text">
@@ -89,7 +152,7 @@
 
                                 <!-- CONTACT US BUTTON -->
                                 <a href="#" class="contact-us-btn m-auto">
-                                    <img src="/assets/image/contact-us.svg" /> Contact Us
+                                    <img src="assets/image/contact-us.svg" /> Contact Us
                                 </a>
 
                                 <div class="hero-footer d-flex flex-wrap justify-content-center gap-4">
@@ -122,14 +185,15 @@
                 </div>
             </div>
         </section>
-
+        <!-- Banner section end -->
+        <!-- Info section start -->
         <section class="info-section">
             <div class="container">
                 <div class="row align-items-center g-5 m-0">
 
                     <div class="col-md-5 text-center text-md-start m-0">
                         <div class="image-wrapper">
-                            <img src="/assets/image/business.jpg" alt="Professional working"
+                            <img src="assets/image/business.jpg" alt="Professional working"
                                 class="img-fluid custom-shape">
                         </div>
                     </div>
@@ -140,7 +204,7 @@
                                 Empower
                             </span>
 
-                            <h2 class="display-5 mb-4 business-h">
+                            <h2 class="display-5 mb-4 business-h title-2">
                                 From Idea to Launch Complete Website Development Services
                             </h2>
 
@@ -152,22 +216,22 @@
 
                             <ul class="list-unstyled business-list">
                                 <li class="mb-3 d-flex align-items-center gap-3">
-                                    <img src="/assets/image/star-tik.svg" />
+                                    <img src="assets/image/star-tik.svg" />
                                     Stand Out from the Competition
                                 </li>
                                 <li class="mb-3 d-flex align-items-center gap-3">
-                                    <img src="/assets/image/star-tik.svg" />
+                                    <img src="assets/image/star-tik.svg" />
                                     Lightning-Fast Performance
                                 </li>
                                 <li class="d-flex align-items-center gap-3">
-                                    <img src="/assets/image/star-tik.svg" />
+                                    <img src="assets/image/star-tik.svg" />
                                     100% Satisfaction Guaranteed
                                 </li>
                             </ul>
 
                             <!-- CONTACT US BUTTON -->
                             <a href="#" class="contact-us-btn">
-                                <img src="/assets/image/contact-us.svg" /> Contact Us
+                                <img src="assets/image/contact-us.svg" /> Contact Us
                             </a>
 
                         </div>
@@ -176,15 +240,16 @@
                 </div>
             </div>
         </section>
-
-        <section class="services-section">
+        <!-- Info section end -->
+        <!-- Services Section Start -->
+        <section class="services-section section-padding">
             <div class="container">
-                <div class="row g-5">
+                <div class="row g-md-5 justify-content-between">
                     <div class="col-lg-4 blog-1 pe-0">
                         <span class="badge rounded-pill bg-white text-danger px-3 py-2 mb-3 fw-bold empower">
                             Our Service
                         </span>
-                        <h2 class="display-6 fw-bold gradient-text mb-4">
+                        <h2 class="display-6 gradient-text title-2 mb-4">
                             Smart Digital solutions for Modern Businesses
                         </h2>
                         <p class="text-secondary mb-4">We specialize in creating stunning websites that captivate and
@@ -193,54 +258,66 @@
 
                         <!-- CONTACT US BUTTON -->
                         <a href="#" class="contact-us-btn">
-                            <img src="/assets/image/contact-us.svg" /> Contact Us
+                            <img src="assets/image/contact-us.svg" /> Contact Us
                         </a>
                     </div>
 
                     <div class="col-lg-8 blog-2">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="service-card active-card rounded-4">
-                                    <img src="/assets/image/web-miscellaneous.svg" />
+                        <div class="row row-cols-md-2 row-cols-sm-2 row-cols-1 g-md-5 ps-md-5">
+                            <div class="col">
+                                <div class="service-card rounded-4">
+                                    <img src="assets/image/web-miscellaneous.svg" />
                                     <h4 class="my-4">Web Development</h4>
                                     <p>
                                         We build fast, secure, and mobile-friendly websites that help your business grow
                                         online.
                                     </p>
-                                    <a class="d-flex gap-2">
+                                    <a class="d-flex gap-2 lm">
                                         Learn More
                                         <img src="assets/image/chevron_right.svg" />
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col">
                                 <div class="service-card rounded-4">
-                                    <img src="/assets/image/graphic-design.svg" />
+                                    <img src="assets/image/graphic-design.svg" />
                                     <h4 class="my-4">Graphic Design</h4>
                                     <p>
                                         We design eye-catching logos, banners, and graphics that make your brand look
                                         professional.
                                     </p>
+                                    <a class="d-flex gap-2 lm">
+                                        Learn More
+                                        <img src="assets/image/chevron_right.svg" />
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col">
                                 <div class="service-card rounded-4">
-                                    <img src="/assets/image/design-content.svg" />
+                                    <img src="assets/image/design-content.svg" />
                                     <h4 class="my-4">UI/UX Design</h4>
                                     <p>
                                         We create clean and user-friendly designs so visitors can easily use your
                                         website or app.
                                     </p>
+                                    <a class="d-flex gap-2 lm">
+                                        Learn More
+                                        <img src="assets/image/chevron_right.svg" />
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col">
                                 <div class="service-card rounded-4">
-                                    <img src="/assets/image/marketing-speaker.svg" />
+                                    <img src="assets/image/marketing-speaker.svg" />
                                     <h4 class="my-4">Digital Marketing</h4>
                                     <p>
                                         We promote your business online using SEO, social media, and ads to get more
                                         customers.
                                     </p>
+                                    <a class="d-flex gap-2 lm">
+                                        Learn More
+                                        <img src="assets/image/chevron_right.svg" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -248,11 +325,12 @@
                 </div>
             </div>
         </section>
-
+        <!-- Services Section End -->
+        <!-- Our Work Process Start -->
         <section class="bg-white text-dark work-process-section">
             <div class="container text-center">
                 <h2 class="section-header">
-                    <span>Our Work Process</span>
+                    <span class="title-1">Our Work Process</span>
                 </h2>
 
                 <div class="d-flex align-items-center justify-content-center">
@@ -306,7 +384,7 @@
                         <p class="fw-bold">Planning</p>
                     </div>
 
-                    <div class="process-step">
+                    <div class="process-step process-step1">
                         <div class="step-circle mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
                                 fill="none">
@@ -356,7 +434,7 @@
                         <p class="fw-bold">Design</p>
                     </div>
 
-                    <div class="process-step">
+                    <div class="process-step ">
                         <div class="step-circle mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56"
                                 fill="none">
@@ -432,11 +510,13 @@
                 </div>
             </div>
         </section>
+        <!-- Our Work Process End -->
 
+        <!-- Solution section start -->
         <section class="solutions-section">
             <div class="container">
                 <h2 class="section-header text-center">
-                    <span>Ready-To-Use Solutions</span>
+                    <span class="title-1">Ready-To-Use Solutions</span>
                 </h2>
                 <div class="d-flex align-items-center justify-content-center">
                     <p class="solutions-text">
@@ -447,7 +527,7 @@
             </div>
 
             <div class="container">
-                <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4 position-relative">
+                <div class="row g-4 row-cols-4 position-relative">
 
                     <div class="col use-solutions-cart-wrapper">
                         <div class="solution-card"
@@ -478,15 +558,15 @@
 
                                     <ul class="feature-list">
                                         <li class="gap-3 d-flex mb-3">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             Stand Out from the Competition
                                         </li>
                                         <li class="gap-3 d-flex mb-3">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             Lightning-Fast Performance
                                         </li>
                                         <li class="gap-3 d-flex">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             100% Satisfaction Guaranteed
                                         </li>
                                     </ul>
@@ -533,15 +613,15 @@
 
                                     <ul class="feature-list">
                                         <li class="gap-3 d-flex mb-3">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             Stand Out from the Competition
                                         </li>
                                         <li class="gap-3 d-flex mb-3">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             Lightning-Fast Performance
                                         </li>
                                         <li class="gap-3 d-flex">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             100% Satisfaction Guaranteed
                                         </li>
                                     </ul>
@@ -588,15 +668,15 @@
 
                                     <ul class="feature-list">
                                         <li class="gap-3 d-flex mb-3">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             Stand Out from the Competition
                                         </li>
                                         <li class="gap-3 d-flex mb-3">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             Lightning-Fast Performance
                                         </li>
                                         <li class="gap-3 d-flex">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             100% Satisfaction Guaranteed
                                         </li>
                                     </ul>
@@ -643,15 +723,15 @@
 
                                     <ul class="feature-list">
                                         <li class="gap-3 d-flex mb-3">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             Stand Out from the Competition
                                         </li>
                                         <li class="gap-3 d-flex mb-3">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             Lightning-Fast Performance
                                         </li>
                                         <li class="gap-3 d-flex">
-                                            <img src="/assets/image/star-tik.svg">
+                                            <img src="assets/image/star-tik.svg">
                                             100% Satisfaction Guaranteed
                                         </li>
                                     </ul>
@@ -672,22 +752,22 @@
                 </div>
             </div>
         </section>
-
+        <!-- Solution section end -->
+        <!-- Testimonial Section Start -->
         <section class="testimonial-section">
             <div class="container text-center">
+                <h2 class="section-header title-2">
+                    <span class="title-1">What Our Clients Say</span>
+                </h2>
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <h2 class="section-header">
-                                <span>What Our Clients Say</span>
-                            </h2>
-
                             <div class="stars">
-                                <img src="./assets/image/star.svg">
-                                <img src="./assets/image/star.svg">
-                                <img src="./assets/image/star.svg">
-                                <img src="./assets/image/star.svg">
-                                <img src="./assets/image/star.svg">
+                                <img src="assets/image/star.svg">
+                                <img src="assets/image/star.svg">
+                                <img src="assets/image/star.svg">
+                                <img src="assets/image/star.svg">
+                                <img src="assets/image/star.svg">
                             </div>
 
                             <div class="row justify-content-center mb-4">
@@ -739,16 +819,12 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <h2 class="section-header">
-                                <span>What Our Clients Say</span>
-                            </h2>
-
                             <div class="stars">
-                                <img src="./assets/image/star.svg">
-                                <img src="./assets/image/star.svg">
-                                <img src="./assets/image/star.svg">
-                                <img src="./assets/image/star.svg">
-                                <img src="./assets/image/star.svg">
+                                <img src="assets/image/star.svg">
+                                <img src="assets/image/star.svg">
+                                <img src="assets/image/star.svg">
+                                <img src="assets/image/star.svg">
+                                <img src="assets/image/star.svg">
                             </div>
 
                             <div class="row justify-content-center mb-4">
@@ -809,13 +885,13 @@
                 </div>
             </div>
         </section>
-
-
+        <!-- Testimonial Section End -->
+        <!-- Our Success Story Start -->
         <section class="success-section py-5">
             <div class="container py-lg-5">
-                <div class="row justify-content-between">
+                <div class="row justify-content-between gap-3">
                     <div class="col-lg-5 m-0 success-section-left">
-                        <h2 class="success-stories-heading mb-4">Our Success Stories</h2>
+                        <h2 class="success-stories-heading mb-4 title-1">Our Success Stories</h2>
 
                         <div class="project-details text-light mb-4">
                             <p class="mb-4"><strong>Project Name:</strong> <span>E-Commerce Website</span></p>
@@ -841,78 +917,38 @@
 
                     <div class="col-lg-7">
                         <div id="successStories">
-                            <div class="main-card mb-3 successStories-cart">
-                                <img src="/assets/image/prot-1.png" class="img-fluid rounded-3" alt="Project Mockup">
-                                <div class="action-circle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8"
-                                        fill="none">
+
+                            <div class="row mb-3 successStories-cart active"
+                                style="background: url(../assets/image/our-success-stories/1.png); background-size: cover; background-repeat: no-repeat;">
+
+                                <!-- <button class="btn-cta">
+                                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M11.91 -0.00113721L12.97 1.05986L7.193 6.83886C7.10043 6.93202 6.99036 7.00595 6.86911 7.05639C6.74786 7.10684 6.61783 7.13281 6.4865 7.13281C6.35517 7.13281 6.22514 7.10684 6.10389 7.05639C5.98264 7.00595 5.87257 6.93202 5.78 6.83886L2.65457e-07 1.05986L1.06 -0.00013776L6.485 5.42386L11.91 -0.00113721Z"
                                             fill="white" />
                                     </svg>
-                                </div>
+                                </button> -->
                             </div>
-                            <div class="row mb-3 successStories-cart">
-                                <div class="col-12">
-                                    <div class="rounded-2"
-                                        style="background: url(assets/image/prot-2.jpg);height: 96px;"></div>
-                                </div>
+                            <div class="row mb-3 successStories-cart"
+                                style="background: url(../assets/image/our-success-stories/2.png); background-size: cover; background-repeat: no-repeat;">
                             </div>
-                            <div class="row successStories-cart">
-                                <div class="col-12">
-                                    <div class="rounded-2"
-                                        style="background: url(assets/image/prot-3.png);height: 96px;"></div>
-                                </div>
+                            <div class="row mb-3 successStories-cart"
+                                style="background: url(../assets/image/our-success-stories/3.png); background-size: cover; background-repeat: no-repeat;">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- <section class="success-section py-5">
-            <div class="container py-lg-5">
-                <div class="row justify-content-between">
-                    <div class="col-lg-5 m-0 success-section-left">
-                        <h2 class="success-stories-heading mb-4">Our Success Stories</h2>
-
-                        <div class="project-details text-light mb-4">
-                            <p class="mb-4"><strong>Project Name:</strong> <span id="project-name">E-Commerce
-                                    Website</span></p>
-                            <p class="mb-4"><strong>Overview:</strong> <span id="project-overview">Developed a sleek,
-                                    user-friendly online store...</span></p>
-                            <p class="mb-4"><strong>Result:</strong> <span id="project-result">Increased sales by 40%
-                                    within 3 months.</span></p>
-                        </div>
-
-                        <a href="#" id="view-work-link" class="btn-custom-pill">View work </a>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="main-card mb-3 position-relative">
-                            <img id="main-project-image" src="/assets/image/prot-1.png" class="img-fluid rounded-3"
-                                alt="Project Mockup">
-
-                            <div class="action-circle" id="next-project-btn" style="cursor: pointer;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8"
-                                    fill="none">
-                                    <path
-                                        d="M11.91 -0.00113721L12.97 1.05986L7.193 6.83886C7.10043 6.93202 6.99036 7.00595 6.86911 7.05639C6.74786 7.10684 6.61783 7.13281 6.4865 7.13281C6.35517 7.13281 6.22514 7.10684 6.10389 7.05639C5.98264 7.00595 5.87257 6.93202 5.78 6.83886L2.65457e-07 1.05986L1.06 -0.00013776L6.485 5.42386L11.91 -0.00113721Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
+        <!-- Our Success Story End -->
+        <!-- Why Us Section Start -->
         <section class="why-us-section position-relative">
             <div class="bg-overlay"></div>
 
             <div class="container position-relative z-1 text-white">
                 <div class="text-center why-us-section-heading">
-                    <h2>Why Clients Get Solutions From Us</h2>
+                    <h2 class="title-2">Why Clients Get Solutions From Us</h2>
                     <p class="mx-auto">We don't just build websites — we
                         provide complete digital solutions that help businesses grow, look professional, and perform
                         better online.</p>
@@ -1000,90 +1036,264 @@
 
                     <div class="text-center mt-5">
                         <a href="#" class="contact-us-btn m-auto">
-                            <img src="/assets/image/contact-us.svg" /> Contact Us
+                            <img src="assets/image/contact-us.svg" /> Contact Us
                         </a>
                     </div>
                 </div>
         </section>
-
+        <!-- Why Us Section End -->
+        <!-- Faq Section Start -->
         <section class="faq-section">
             <div class="container">
                 <div class="text-center faq-header">
-                    <h1>FAQs</h1>
+                    <h1 class="title-1">FAQs</h1>
                     <p>Find answers to common questions about our services and how we can help you.</p>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="faq-box mx-auto mb-3">
-                            <div class="mb-4 d-flex justify-content-between align-items-center">
-                                <h6>What services do you offer?</h6>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M17.6006 5.92578C17.7649 5.92578 17.8669 5.97428 17.9473 6.05469C18.0275 6.135 18.0761 6.23648 18.0762 6.40039C18.0762 6.56459 18.0276 6.66668 17.9473 6.74707L12.6934 12.001L13.0469 12.3545L17.9473 17.2539C18.0276 17.3343 18.0761 17.4364 18.0762 17.6006C18.0762 17.7649 18.0277 17.8669 17.9473 17.9473C17.8669 18.0277 17.7649 18.0762 17.6006 18.0762C17.4364 18.0761 17.3343 18.0276 17.2539 17.9473L12.3545 13.0469L12.001 12.6934L6.74707 17.9473C6.66668 18.0276 6.56459 18.0762 6.40039 18.0762C6.23648 18.0761 6.135 18.0275 6.05469 17.9473C5.97428 17.8669 5.92578 17.7649 5.92578 17.6006C5.92582 17.4364 5.97432 17.3343 6.05469 17.2539L11.3076 12.001L10.9541 11.6475L6.05469 6.74707C5.97429 6.66667 5.92578 6.56466 5.92578 6.40039C5.92586 6.23635 5.97435 6.13503 6.05469 6.05469C6.13503 5.97435 6.23635 5.92586 6.40039 5.92578C6.56466 5.92578 6.66667 5.97429 6.74707 6.05469L11.6475 10.9541L12.001 11.3076L17.2539 6.05469C17.3343 5.97432 17.4364 5.92582 17.6006 5.92578Z"
-                                        fill="#192023" stroke="#192023" />
-                                </svg>
-                            </div>
-                            <p>We specialize in web design and development, graphic design, and digital marketing. Our
-                                team is dedicated to creating tailored solutions for your business needs. Whether you
-                                need a stunning website or effective marketing strategies, we’ve got you covered.</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="accordion" id="faqAccordion">
 
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="faq-box mx-auto mb-3">
-                            <div class="mb-4 d-flex justify-content-between align-items-center">
-                                <h6>What services do you offer?</h6>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M17.6006 5.92578C17.7649 5.92578 17.8669 5.97428 17.9473 6.05469C18.0275 6.135 18.0761 6.23648 18.0762 6.40039C18.0762 6.56459 18.0276 6.66668 17.9473 6.74707L12.6934 12.001L13.0469 12.3545L17.9473 17.2539C18.0276 17.3343 18.0761 17.4364 18.0762 17.6006C18.0762 17.7649 18.0277 17.8669 17.9473 17.9473C17.8669 18.0277 17.7649 18.0762 17.6006 18.0762C17.4364 18.0761 17.3343 18.0276 17.2539 17.9473L12.3545 13.0469L12.001 12.6934L6.74707 17.9473C6.66668 18.0276 6.56459 18.0762 6.40039 18.0762C6.23648 18.0761 6.135 18.0275 6.05469 17.9473C5.97428 17.8669 5.92578 17.7649 5.92578 17.6006C5.92582 17.4364 5.97432 17.3343 6.05469 17.2539L11.3076 12.001L10.9541 11.6475L6.05469 6.74707C5.97429 6.66667 5.92578 6.56466 5.92578 6.40039C5.92586 6.23635 5.97435 6.13503 6.05469 6.05469C6.13503 5.97435 6.23635 5.92586 6.40039 5.92578C6.56466 5.92578 6.66667 5.97429 6.74707 6.05469L11.6475 10.9541L12.001 11.3076L17.2539 6.05469C17.3343 5.97432 17.4364 5.92582 17.6006 5.92578Z"
-                                        fill="#192023" stroke="#192023" />
-                                </svg>
-                            </div>
-                            <p>We specialize in web design and development, graphic design, and digital marketing. Our
-                                team is dedicated to creating tailored solutions for your business needs. Whether you
-                                need a stunning website or effective marketing strategies, we’ve got you covered.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center still-questions-section">
-                    <div>
-                        <h2 class="section-header">
-                            <span>Still Have Questions?</span>
+                    <!-- Item 1 - OPEN by default -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1" aria-expanded="true">
+                                What services do you offer?
+                            </button>
                         </h2>
-                        <p class="text-center still-questions mt-3">We're here to help you!</p>
+                        <div id="collapse1" class="accordion-collapse expand show">
+                            <div class="accordion-body">
+                                We specialize in web design and development, graphic design, and digital marketing. Our
+                                team is dedicated to creating tailored solutions for your business needs. Whether you
+                                need a stunning website or effective marketing strategies, we’ve got you covered.
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="contact-us-btn m-auto mt-4">
-                        <img src="/assets/image/contact-us.svg" /> Contact Us
-                    </a>
+
+                    <!-- Item 2 - OPEN by default -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="true">
+                                How long does it take?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse show">
+                            <div class="accordion-body">
+                                The timeline for projects varies based on complexity and requirements. Typically, web
+                                design projects take 4-6 weeks. We will provide a detailed timeline during the initial
+                                consultation.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 - OPEN by default -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="true">
+                                Do you offer support?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                Yes, we offer ongoing support and maintenance for all our projects. Our team is
+                                available to assist you with any issues or updates you may need. Your satisfaction is
+                                our priority.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 - OPEN by default -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="true">
+                                What is your pricing?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                Our pricing varies depending on the scope of the project. We provide customized quotes
+                                based on your specific needs. Contact us for a detailed estimate.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 - OPEN by default -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="true">
+                                Can I see examples?
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                Absolutely! We have a portfolio showcasing our previous work. You can view examples of
+                                our web design, graphic design, and marketing projects. Let us know if you'd like to see
+                                something specific.
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+            </div>
+            </div>
+
+            <div class="text-center still-questions-section">
+                <div>
+                    <h2 class="section-header">
+                        <span class="title-1">Still Have Questions?</span>
+                    </h2>
+                    <p class="text-center still-questions mt-3">We're here to help you!</p>
+                </div>
+                <a href="#" class="contact-us-btn m-auto mt-4">
+                    <img src="assets/image/contact-us.svg" /> Contact Us
+                </a>
+            </div>
             </div>
         </section>
 
+        <!-- Faq Section End -->
+        <!-- Free Consultaion Start -->
         <section class="py-5 bg-dark text-white text-center consultation-today-section"
             style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/image/consultation-today.jpg') center/cover;">
             <div class="consultation-today-container">
-                <h2 class="mb-4">Get Your Free Consultation Today</h2>
+                <h2 class="mb-4 title-1">Get Your Free Consultation Today</h2>
                 <p>
                     Get a website that looks great and converts visitors. Choose the right digital solution for your
                     business. Let’s create something fast, modern, and affordable.
                 </p>
                 <a href="#" class="contact-us-btn m-auto w-205">
-                    <img src="/assets/image/contact-us.svg" /> Free Consultation
+                    <img src="assets/image/contact-us.svg" /> Free Consultation
                 </a>
             </div>
         </section>
+        <!-- Free Consultaion End -->
 
+        <!-- Blog Section Start -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="title3 mb-3">Our Latest Blog</h2>
+                    <p class="mb-4">Contrary popular belief lorem Ipsum is simply random text</p>
+                </div>
+                <div class="row row-cols-md-3 row-cols-1 g-3">
+                    <div class="col">
+                        <div class="review-card hover-lift">
+                            <a href="/" class="text-decoration-none">
+                                <!-- Foreground gaming image (no background overlay) -->
+                                <div class="review-header">
+                                    <img src="assets/image/blogs/1.png" class="review-img img-fluid"
+                                        alt="Excited gamer celebrating with fist pump in RGB setup">
+                                </div>
+
+                                <!-- Text content -->
+                            </a>
+                            <div class="review-body mt-3">
+                                <a href="/" class="text-decoration-none">
+                                    <div class="date-line mb-12">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 1.49648L10.9965 1.4965V0.5C10.9965 0.22375 10.7727 0 10.4965 0C10.2203 0 9.9965 0.22375 9.9965 0.5V1.49625H5.9965V0.5C5.9965 0.22375 5.77275 0 5.4965 0C5.22025 0 4.9965 0.22375 4.9965 0.5V1.49625H1C0.44775 1.49625 0 1.944 0 2.49625V14.9963C0 15.5485 0.44775 15.9963 1 15.9963H15C15.5522 15.9963 16 15.5485 16 14.9963V2.49625C16 1.94423 15.5522 1.49648 15 1.49648ZM15 14.9963H1V2.49625H4.9965V3C4.9965 3.27623 5.22025 3.5 5.4965 3.5C5.77275 3.5 5.9965 3.27623 5.9965 3V2.4965H9.9965V3.00025C9.9965 3.2765 10.2203 3.50025 10.4965 3.50025C10.7727 3.50025 10.9965 3.2765 10.9965 3.00025V2.4965H15V14.9963ZM11.5 7.99648H12.5C12.776 7.99648 13 7.77248 13 7.49648V6.49648C13 6.22048 12.776 5.99648 12.5 5.99648H11.5C11.224 5.99648 11 6.22048 11 6.49648V7.49648C11 7.77248 11.224 7.99648 11.5 7.99648ZM11.5 11.9962H12.5C12.776 11.9962 13 11.7725 13 11.4962V10.4962C13 10.2202 12.776 9.99623 12.5 9.99623H11.5C11.224 9.99623 11 10.2202 11 10.4962V11.4962C11 11.7727 11.224 11.9962 11.5 11.9962ZM8.5 9.99623H7.5C7.224 9.99623 7 10.2202 7 10.4962V11.4962C7 11.7725 7.224 11.9962 7.5 11.9962H8.5C8.776 11.9962 9 11.7725 9 11.4962V10.4962C9 10.2205 8.776 9.99623 8.5 9.99623ZM8.5 5.99648H7.5C7.224 5.99648 7 6.22048 7 6.49648V7.49648C7 7.77248 7.224 7.99648 7.5 7.99648H8.5C8.776 7.99648 9 7.77248 9 7.49648V6.49648C9 6.22023 8.776 5.99648 8.5 5.99648ZM4.5 5.99648H3.5C3.224 5.99648 3 6.22048 3 6.49648V7.49648C3 7.77248 3.224 7.99648 3.5 7.99648H4.5C4.776 7.99648 5 7.77248 5 7.49648V6.49648C5 6.22023 4.776 5.99648 4.5 5.99648ZM4.5 9.99623H3.5C3.224 9.99623 3 10.2202 3 10.4962V11.4962C3 11.7725 3.224 11.9962 3.5 11.9962H4.5C4.776 11.9962 5 11.7725 5 11.4962V10.4962C5 10.2205 4.776 9.99623 4.5 9.99623Z"
+                                                fill="black" />
+                                        </svg>
+
+                                        <span class="text-muted">
+                                            June 23, 2025
+                                        </span>
+                                    </div>
+                                </a>
+                                <p class="quote-text mt-12"><a href="/" class="text-decoration-none">
+                                    </a><a href="#" class="quote-text text-decoration-none">
+                                        “Excellent product, worth every penny.”
+                                    </a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <div class="review-card hover-lift">
+                            <a href="/" class="text-decoration-none">
+                                <!-- Foreground gaming image (no background overlay) -->
+                                <div class="review-header">
+                                    <img src="assets/image/blogs/2.png" class="review-img"
+                                        alt="Excited gamer celebrating with fist pump in RGB setup">
+                                </div>
+
+                                <!-- Text content -->
+                            </a>
+                            <div class="review-body mt-3"><a href="/" class="text-decoration-none">
+                                    <div class="date-line mb-12">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 1.49648L10.9965 1.4965V0.5C10.9965 0.22375 10.7727 0 10.4965 0C10.2203 0 9.9965 0.22375 9.9965 0.5V1.49625H5.9965V0.5C5.9965 0.22375 5.77275 0 5.4965 0C5.22025 0 4.9965 0.22375 4.9965 0.5V1.49625H1C0.44775 1.49625 0 1.944 0 2.49625V14.9963C0 15.5485 0.44775 15.9963 1 15.9963H15C15.5522 15.9963 16 15.5485 16 14.9963V2.49625C16 1.94423 15.5522 1.49648 15 1.49648ZM15 14.9963H1V2.49625H4.9965V3C4.9965 3.27623 5.22025 3.5 5.4965 3.5C5.77275 3.5 5.9965 3.27623 5.9965 3V2.4965H9.9965V3.00025C9.9965 3.2765 10.2203 3.50025 10.4965 3.50025C10.7727 3.50025 10.9965 3.2765 10.9965 3.00025V2.4965H15V14.9963ZM11.5 7.99648H12.5C12.776 7.99648 13 7.77248 13 7.49648V6.49648C13 6.22048 12.776 5.99648 12.5 5.99648H11.5C11.224 5.99648 11 6.22048 11 6.49648V7.49648C11 7.77248 11.224 7.99648 11.5 7.99648ZM11.5 11.9962H12.5C12.776 11.9962 13 11.7725 13 11.4962V10.4962C13 10.2202 12.776 9.99623 12.5 9.99623H11.5C11.224 9.99623 11 10.2202 11 10.4962V11.4962C11 11.7727 11.224 11.9962 11.5 11.9962ZM8.5 9.99623H7.5C7.224 9.99623 7 10.2202 7 10.4962V11.4962C7 11.7725 7.224 11.9962 7.5 11.9962H8.5C8.776 11.9962 9 11.7725 9 11.4962V10.4962C9 10.2205 8.776 9.99623 8.5 9.99623ZM8.5 5.99648H7.5C7.224 5.99648 7 6.22048 7 6.49648V7.49648C7 7.77248 7.224 7.99648 7.5 7.99648H8.5C8.776 7.99648 9 7.77248 9 7.49648V6.49648C9 6.22023 8.776 5.99648 8.5 5.99648ZM4.5 5.99648H3.5C3.224 5.99648 3 6.22048 3 6.49648V7.49648C3 7.77248 3.224 7.99648 3.5 7.99648H4.5C4.776 7.99648 5 7.77248 5 7.49648V6.49648C5 6.22023 4.776 5.99648 4.5 5.99648ZM4.5 9.99623H3.5C3.224 9.99623 3 10.2202 3 10.4962V11.4962C3 11.7725 3.224 11.9962 3.5 11.9962H4.5C4.776 11.9962 5 11.7725 5 11.4962V10.4962C5 10.2205 4.776 9.99623 4.5 9.99623Z"
+                                                fill="black" />
+                                        </svg>
+
+                                        <span class="text-muted">
+                                            June 23, 2025
+                                        </span>
+                                    </div>
+                                </a>
+                                <p class="quote-text mt-12"><a href="/" class="text-decoration-none">
+                                    </a><a href="#" class="quote-text  text-decoration-none">
+                                        “Excellent product, worth every penny.”
+                                    </a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <div class="review-card hover-lift">
+                            <a href="/" class="text-decoration-none">
+                                <!-- Foreground gaming image (no background overlay) -->
+                                <div class="review-header">
+                                    <img src="assets/image/blogs/3.png" class="review-img"
+                                        alt="Excited gamer celebrating with fist pump in RGB setup">
+                                </div>
+
+                                <!-- Text content -->
+                            </a>
+                            <div class="review-body mt-3"><a href="/" class="text-decoration-none">
+                                    <div class="date-line mb-12">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15 1.49648L10.9965 1.4965V0.5C10.9965 0.22375 10.7727 0 10.4965 0C10.2203 0 9.9965 0.22375 9.9965 0.5V1.49625H5.9965V0.5C5.9965 0.22375 5.77275 0 5.4965 0C5.22025 0 4.9965 0.22375 4.9965 0.5V1.49625H1C0.44775 1.49625 0 1.944 0 2.49625V14.9963C0 15.5485 0.44775 15.9963 1 15.9963H15C15.5522 15.9963 16 15.5485 16 14.9963V2.49625C16 1.94423 15.5522 1.49648 15 1.49648ZM15 14.9963H1V2.49625H4.9965V3C4.9965 3.27623 5.22025 3.5 5.4965 3.5C5.77275 3.5 5.9965 3.27623 5.9965 3V2.4965H9.9965V3.00025C9.9965 3.2765 10.2203 3.50025 10.4965 3.50025C10.7727 3.50025 10.9965 3.2765 10.9965 3.00025V2.4965H15V14.9963ZM11.5 7.99648H12.5C12.776 7.99648 13 7.77248 13 7.49648V6.49648C13 6.22048 12.776 5.99648 12.5 5.99648H11.5C11.224 5.99648 11 6.22048 11 6.49648V7.49648C11 7.77248 11.224 7.99648 11.5 7.99648ZM11.5 11.9962H12.5C12.776 11.9962 13 11.7725 13 11.4962V10.4962C13 10.2202 12.776 9.99623 12.5 9.99623H11.5C11.224 9.99623 11 10.2202 11 10.4962V11.4962C11 11.7727 11.224 11.9962 11.5 11.9962ZM8.5 9.99623H7.5C7.224 9.99623 7 10.2202 7 10.4962V11.4962C7 11.7725 7.224 11.9962 7.5 11.9962H8.5C8.776 11.9962 9 11.7725 9 11.4962V10.4962C9 10.2205 8.776 9.99623 8.5 9.99623ZM8.5 5.99648H7.5C7.224 5.99648 7 6.22048 7 6.49648V7.49648C7 7.77248 7.224 7.99648 7.5 7.99648H8.5C8.776 7.99648 9 7.77248 9 7.49648V6.49648C9 6.22023 8.776 5.99648 8.5 5.99648ZM4.5 5.99648H3.5C3.224 5.99648 3 6.22048 3 6.49648V7.49648C3 7.77248 3.224 7.99648 3.5 7.99648H4.5C4.776 7.99648 5 7.77248 5 7.49648V6.49648C5 6.22023 4.776 5.99648 4.5 5.99648ZM4.5 9.99623H3.5C3.224 9.99623 3 10.2202 3 10.4962V11.4962C3 11.7725 3.224 11.9962 3.5 11.9962H4.5C4.776 11.9962 5 11.7725 5 11.4962V10.4962C5 10.2205 4.776 9.99623 4.5 9.99623Z"
+                                                fill="black" />
+                                        </svg>
+
+                                        <span class="text-muted">
+                                            June 23, 2025
+                                        </span>
+                                    </div>
+                                </a>
+                                <p class="quote-text mt-12"><a href="/" class="text-decoration-none">
+                                    </a><a href="#" class="quote-text text-decoration-none">
+                                        “Excellent product, worth every penny.”
+                                    </a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section End -->
     </main>
 
     <footer class="footer-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-6 footer-col">
+                <div class="col-lg-2 col-sm-6 footer-col mb-5 mb-lg-0">
                     <h6 class="mb-2">Quick Links</h6>
                     <ul class="list-unstyled">
                         <li class="py-2">
@@ -1103,7 +1313,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6 footer-col">
+                <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
                     <h6 class="mb-3">Address</h6>
                     <p class="py-2">
                         House no 10, Road no 12, Jasimuddin, Sector 1, Uttara, Dhaka, Bangladesh.
@@ -1111,44 +1321,44 @@
                     <p class="py-2">+880 01851670403</p>
                     <p class="py-2">contact@dnationsoft.com</p>
                 </div>
-                <div class="col-lg-4 col-md-6 footer-col">
+                <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
                     <h6 class="mb-3">Address 2</h6>
                     <p class="py-2">Firoz Mansion, 1nd floor, Post code 7460, Noapara, Avayanagor, Jessore,
                         Bangladesh.</p>
                     <p class="py-2">+8801924329315</p>
                     <p class="py-2">contact@dnationsoft.com</p>
                 </div>
-                <div class="col-lg-2 col-md-6 footer-col d-flex justify-content-end">
+                <div class="col-lg-2 col-sm-6 footer-col d-flex justify-content-md-end mb-5 mb-lg-0">
                     <div>
                         <h6 class="mb-3">Follow Us</h6>
                         <ul class="list-unstyled">
                             <li class="py-2">
                                 <a href="#" class="d-flex align-items-center gap-3">
-                                    <img src="/assets/image/facebook.svg" />
+                                    <img src="assets/image/facebook.svg" />
                                     Facebook
                                 </a>
                             </li>
                             <li class="py-2">
                                 <a href="#" class="d-flex align-items-center gap-3">
-                                    <img src="/assets/image/x.svg" />
+                                    <img src="assets/image/x.svg" />
                                     X
                                 </a>
                             </li>
                             <li class="py-2">
                                 <a href="#" class="d-flex align-items-center gap-3">
-                                    <img src="/assets/image/Instagram.svg" />
+                                    <img src="assets/image/Instagram.svg" />
                                     Instagram
                                 </a>
                             </li>
                             <li class="py-2">
                                 <a href="#" class="d-flex align-items-center gap-3">
-                                    <img src="/assets/image/Linkedin.svg" />
+                                    <img src="assets/image/Linkedin.svg" />
                                     LinkedIn
                                 </a>
                             </li>
                             <li class="py-2">
                                 <a href="#" class="d-flex align-items-center gap-3">
-                                    <img src="/assets/image/youtube.svg" />
+                                    <img src="assets/image/youtube.svg" />
                                     Youtube
                                 </a>
                             </li>
@@ -1157,7 +1367,7 @@
                 </div>
             </div>
             <div class="my-5">
-                <img src="/assets/image/footer-logo.svg" alt="Brand Logo" />
+                <img src="assets/image/footer-logo.svg" alt="Brand Logo" />
             </div>
         </div>
         <div class="container border-top border-secondary pt-4">
@@ -1175,7 +1385,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -1213,14 +1423,14 @@
 
         })
 
-    
+
 
     </script>
 
 
 
     <script>
-        
+
         function updateDots(activeIndex) {
             const dots = document.querySelectorAll('.pagination-dots .dot');
             dots.forEach((dot, index) => {
@@ -1272,7 +1482,50 @@
 
 
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const circles = document.querySelectorAll(".process-step");
+            let index = 0;
 
+            function runSequence() {
+                // Add active class to one circle at a time
+                circles[index].classList.add("active");
+
+                // Move to next circle
+                index++;
+
+                // If we reached the end, reset all and restart
+                if (index >= circles.length) {
+                    setTimeout(() => {
+                        circles.forEach(c => c.classList.remove("active")); // reset all to white
+                        index = 0;
+                        setTimeout(runSequence, 1200);
+                    }, 1200); // pause before reset
+
+                } else {
+                    setTimeout(runSequence, 1200); // delay between each step
+                }
+            }
+
+            runSequence();
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".successStories-cart");
+
+            cards.forEach(card => {
+                card.addEventListener("click", () => {
+                    // Close all other cards
+                    cards.forEach(c => c.classList.remove("active"));
+
+                    // Open the clicked card
+                    card.classList.add("active");
+                });
+            });
+        });
+
+    </script>
 
 </body>
 
