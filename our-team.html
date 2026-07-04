@@ -4,77 +4,892 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- google font -->
+    <meta name="description"
+        content="Our services elevate your brand with tailored solutions in web design, graphic design, UI/UX, and digital marketing. Explore our Food App Design portfolio project." />
+    <title>Our Team | Rilo </title>
+    <!-- Preconnect -->
+    <link rel="preload" href="/assets/image/brudcumb-image.webp" as="image">
+    <!-- Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    </noscript>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
-    <title>Document</title>
     <style>
-        .accordion {
-            max-width: 768px;
-            margin: 0 auto;
+        /* Critical CSS for https://rilo-denation.netlify.app/our-team */
+        @charset "UTF-8";
+
+        :root {
+            --bs-blue: #0d6efd;
+            --bs-indigo: #6610f2;
+            --bs-purple: #6f42c1;
+            --bs-pink: #d63384;
+            --bs-red: #dc3545;
+            --bs-orange: #fd7e14;
+            --bs-yellow: #ffc107;
+            --bs-green: #198754;
+            --bs-teal: #20c997;
+            --bs-cyan: #0dcaf0;
+            --bs-black: #000;
+            --bs-white: #fff;
+            --bs-gray: #6c757d;
+            --bs-gray-dark: #343a40;
+            --bs-gray-100: #f8f9fa;
+            --bs-gray-200: #e9ecef;
+            --bs-gray-300: #dee2e6;
+            --bs-gray-400: #ced4da;
+            --bs-gray-500: #adb5bd;
+            --bs-gray-600: #6c757d;
+            --bs-gray-700: #495057;
+            --bs-gray-800: #343a40;
+            --bs-gray-900: #212529;
+            --bs-primary: #0d6efd;
+            --bs-secondary: #6c757d;
+            --bs-success: #198754;
+            --bs-info: #0dcaf0;
+            --bs-warning: #ffc107;
+            --bs-danger: #dc3545;
+            --bs-light: #f8f9fa;
+            --bs-dark: #212529;
+            --bs-primary-rgb: 13, 110, 253;
+            --bs-secondary-rgb: 108, 117, 125;
+            --bs-success-rgb: 25, 135, 84;
+            --bs-info-rgb: 13, 202, 240;
+            --bs-warning-rgb: 255, 193, 7;
+            --bs-danger-rgb: 220, 53, 69;
+            --bs-light-rgb: 248, 249, 250;
+            --bs-dark-rgb: 33, 37, 41;
+            --bs-primary-text-emphasis: #052c65;
+            --bs-secondary-text-emphasis: #2b2f32;
+            --bs-success-text-emphasis: #0a3622;
+            --bs-info-text-emphasis: #055160;
+            --bs-warning-text-emphasis: #664d03;
+            --bs-danger-text-emphasis: #58151c;
+            --bs-light-text-emphasis: #495057;
+            --bs-dark-text-emphasis: #495057;
+            --bs-primary-bg-subtle: #cfe2ff;
+            --bs-secondary-bg-subtle: #e2e3e5;
+            --bs-success-bg-subtle: #d1e7dd;
+            --bs-info-bg-subtle: #cff4fc;
+            --bs-warning-bg-subtle: #fff3cd;
+            --bs-danger-bg-subtle: #f8d7da;
+            --bs-light-bg-subtle: #fcfcfd;
+            --bs-dark-bg-subtle: #ced4da;
+            --bs-primary-border-subtle: #9ec5fe;
+            --bs-secondary-border-subtle: #c4c8cb;
+            --bs-success-border-subtle: #a3cfbb;
+            --bs-info-border-subtle: #9eeaf9;
+            --bs-warning-border-subtle: #ffe69c;
+            --bs-danger-border-subtle: #f1aeb5;
+            --bs-light-border-subtle: #e9ecef;
+            --bs-dark-border-subtle: #adb5bd;
+            --bs-white-rgb: 255, 255, 255;
+            --bs-black-rgb: 0, 0, 0;
+            --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+            --bs-body-font-family: var(--bs-font-sans-serif);
+            --bs-body-font-size: 1rem;
+            --bs-body-font-weight: 400;
+            --bs-body-line-height: 1.5;
+            --bs-body-color: #212529;
+            --bs-body-color-rgb: 33, 37, 41;
+            --bs-body-bg: #fff;
+            --bs-body-bg-rgb: 255, 255, 255;
+            --bs-emphasis-color: #000;
+            --bs-emphasis-color-rgb: 0, 0, 0;
+            --bs-secondary-color: rgba(33, 37, 41, 0.75);
+            --bs-secondary-color-rgb: 33, 37, 41;
+            --bs-secondary-bg: #e9ecef;
+            --bs-secondary-bg-rgb: 233, 236, 239;
+            --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+            --bs-tertiary-color-rgb: 33, 37, 41;
+            --bs-tertiary-bg: #f8f9fa;
+            --bs-tertiary-bg-rgb: 248, 249, 250;
+            --bs-heading-color: inherit;
+            --bs-link-color: #0d6efd;
+            --bs-link-color-rgb: 13, 110, 253;
+            --bs-link-decoration: underline;
+            --bs-link-hover-color: #0a58ca;
+            --bs-link-hover-color-rgb: 10, 88, 202;
+            --bs-code-color: #d63384;
+            --bs-highlight-color: #212529;
+            --bs-highlight-bg: #fff3cd;
+            --bs-border-width: 1px;
+            --bs-border-style: solid;
+            --bs-border-color: #dee2e6;
+            --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+            --bs-border-radius: 0.375rem;
+            --bs-border-radius-sm: 0.25rem;
+            --bs-border-radius-lg: 0.5rem;
+            --bs-border-radius-xl: 1rem;
+            --bs-border-radius-xxl: 2rem;
+            --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+            --bs-border-radius-pill: 50rem;
+            --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+            --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+            --bs-focus-ring-width: 0.25rem;
+            --bs-focus-ring-opacity: 0.25;
+            --bs-focus-ring-color: rgba(13, 110, 253, 0.25);
+            --bs-form-valid-color: #198754;
+            --bs-form-valid-border-color: #198754;
+            --bs-form-invalid-color: #dc3545;
+            --bs-form-invalid-border-color: #dc3545
         }
 
-        .accordion-item {
-            border-radius: 8px;
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box
         }
 
-        .accordion-body {
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-            padding-top: 0px !important;
-            color: #4C5254 !important;
-            line-height: 150%;
+        @media (prefers-reduced-motion:no-preference) {
+            :root {
+                scroll-behavior: smooth
+            }
         }
 
-        .accordion-button:not(.collapsed) {
-            background-color: unset !important;
-            box-shadow: unset !important;
+        body {
+            margin: 0;
+            font-family: var(--bs-body-font-family);
+            font-size: var(--bs-body-font-size);
+            font-weight: var(--bs-body-font-weight);
+            line-height: var(--bs-body-line-height);
+            color: var(--bs-body-color);
+            text-align: var(--bs-body-text-align);
+            background-color: var(--bs-body-bg);
+            -webkit-text-size-adjust: 100%
         }
 
-        .accordion-item {
-            border-top: 0 !important;
-        }
-
-        .accordion-header {
-            border-top: 1px solid #e6e6e6 !important;
-            border-radius: 8px !important;
-            overflow: hidden;
-        }
-
-        .accordion-item {
-            border-radius: 8px !important;
-        }
-
-        .accordion-item>.accordion-header .accordion-button {
-            border-top-left-radius: unset !important;
-            border-top-right-radius: unset !important;
-            box-shadow: unset;
-        }
-
-        .accordion-button:not(.collapsed)::after {
-            background-image: var(--bs-accordion-btn-active-iconn) !important;
-        }
-
-        .accordion-button {
-            font-weight: 700;
-            color: #192023 !important;
-            font-size: 18px;
-            padding: 20px;
-        }
-
-        .quote-text {
-            color: #000;
-            font-size: 18px;
+        h2,
+        h3,
+        h4 {
+            margin-top: 0;
+            margin-bottom: .5rem;
             font-weight: 500;
+            line-height: 1.2;
+            color: var(--bs-heading-color)
+        }
+
+        h2 {
+            font-size: calc(1.325rem + .9vw)
+        }
+
+        @media (min-width:1200px) {
+            h2 {
+                font-size: 2rem
+            }
+        }
+
+        h3 {
+            font-size: calc(1.3rem + .6vw)
+        }
+
+        @media (min-width:1200px) {
+            h3 {
+                font-size: 1.75rem
+            }
+        }
+
+        h4 {
+            font-size: calc(1.275rem + .3vw)
+        }
+
+        @media (min-width:1200px) {
+            h4 {
+                font-size: 1.5rem
+            }
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem
+        }
+
+        ul {
+            padding-left: 2rem
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 1rem
+        }
+
+        ul ul {
+            margin-bottom: 0
+        }
+
+        a {
+            color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+            text-decoration: underline
+        }
+
+        img,
+        svg {
+            vertical-align: middle
+        }
+
+        button {
+            border-radius: 0
+        }
+
+        button {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit
+        }
+
+        button {
+            text-transform: none
+        }
+
+        [type=button],
+        button {
+            -webkit-appearance: button
+        }
+
+        ::-moz-focus-inner {
+            padding: 0;
+            border-style: none
+        }
+
+        ::-webkit-datetime-edit-day-field,
+        ::-webkit-datetime-edit-fields-wrapper,
+        ::-webkit-datetime-edit-hour-field,
+        ::-webkit-datetime-edit-minute,
+        ::-webkit-datetime-edit-month-field,
+        ::-webkit-datetime-edit-text,
+        ::-webkit-datetime-edit-year-field {
+            padding: 0
+        }
+
+        ::-webkit-inner-spin-button {
+            height: auto
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-color-swatch-wrapper {
+            padding: 0
+        }
+
+        ::-webkit-file-upload-button {
+            font: inherit;
+            -webkit-appearance: button
+        }
+
+        ::file-selector-button {
+            font: inherit;
+            -webkit-appearance: button
+        }
+
+        .list-unstyled {
+            padding-left: 0;
+            list-style: none
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto
+        }
+
+        .container,
+        .container-fluid {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            width: 100%;
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        @media (min-width:576px) {
+            .container {
+                max-width: 540px
+            }
+        }
+
+        @media (min-width:768px) {
+            .container {
+                max-width: 720px
+            }
+        }
+
+        @media (min-width:992px) {
+            .container {
+                max-width: 960px
+            }
+        }
+
+        @media (min-width:1200px) {
+            .container {
+                max-width: 1140px
+            }
+        }
+
+        @media (min-width:1400px) {
+            .container {
+                max-width: 1320px
+            }
+        }
+
+        :root {
+            --bs-breakpoint-xs: 0;
+            --bs-breakpoint-sm: 576px;
+            --bs-breakpoint-md: 768px;
+            --bs-breakpoint-lg: 992px;
+            --bs-breakpoint-xl: 1200px;
+            --bs-breakpoint-xxl: 1400px
+        }
+
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-.5 * var(--bs-gutter-x));
+            margin-left: calc(-.5 * var(--bs-gutter-x))
+        }
+
+        .row>* {
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 100%;
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
+            margin-top: var(--bs-gutter-y)
+        }
+
+        .col {
+            flex: 1 0 0
+        }
+
+        .row-cols-1>* {
+            flex: 0 0 auto;
+            width: 100%
+        }
+
+        .g-4 {
+            --bs-gutter-x: 1.5rem
+        }
+
+        .g-4 {
+            --bs-gutter-y: 1.5rem
+        }
+
+        .g-5 {
+            --bs-gutter-x: 3rem
+        }
+
+        .g-5 {
+            --bs-gutter-y: 3rem
+        }
+
+        @media (min-width:576px) {
+            .row-cols-sm-2>* {
+                flex: 0 0 auto;
+                width: 50%
+            }
+
+            .col-sm-6 {
+                flex: 0 0 auto;
+                width: 50%
+            }
+        }
+
+        @media (min-width:768px) {
+            .row-cols-md-3>* {
+                flex: 0 0 auto;
+                width: 33.33333333%
+            }
+
+            .row-cols-md-4>* {
+                flex: 0 0 auto;
+                width: 25%
+            }
+        }
+
+        @media (min-width:992px) {
+            .row-cols-lg-4>* {
+                flex: 0 0 auto;
+                width: 25%
+            }
+
+            .col-lg-2 {
+                flex: 0 0 auto;
+                width: 16.66666667%
+            }
+
+            .col-lg-4 {
+                flex: 0 0 auto;
+                width: 33.33333333%
+            }
+        }
+
+        .collapse:not(.show) {
+            display: none
+        }
+
+        .dropdown {
+            position: relative
+        }
+
+        .dropdown-toggle {
+            white-space: nowrap
+        }
+
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            border-top: .3em solid;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent
+        }
+
+        .dropdown-menu {
+            --bs-dropdown-zindex: 1000;
+            --bs-dropdown-min-width: 10rem;
+            --bs-dropdown-padding-x: 0;
+            --bs-dropdown-padding-y: 0.5rem;
+            --bs-dropdown-spacer: 0.125rem;
+            --bs-dropdown-font-size: 1rem;
+            --bs-dropdown-color: var(--bs-body-color);
+            --bs-dropdown-bg: var(--bs-body-bg);
+            --bs-dropdown-border-color: var(--bs-border-color-translucent);
+            --bs-dropdown-border-radius: var(--bs-border-radius);
+            --bs-dropdown-border-width: var(--bs-border-width);
+            --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
+            --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
+            --bs-dropdown-divider-margin-y: 0.5rem;
+            --bs-dropdown-box-shadow: var(--bs-box-shadow);
+            --bs-dropdown-link-color: var(--bs-body-color);
+            --bs-dropdown-link-hover-color: var(--bs-body-color);
+            --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
+            --bs-dropdown-link-active-color: #fff;
+            --bs-dropdown-link-active-bg: #0d6efd;
+            --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
+            --bs-dropdown-item-padding-x: 1rem;
+            --bs-dropdown-item-padding-y: 0.25rem;
+            --bs-dropdown-header-color: #6c757d;
+            --bs-dropdown-header-padding-x: 1rem;
+            --bs-dropdown-header-padding-y: 0.5rem;
+            position: absolute;
+            z-index: var(--bs-dropdown-zindex);
+            display: none;
+            min-width: var(--bs-dropdown-min-width);
+            padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
+            margin: 0;
+            font-size: var(--bs-dropdown-font-size);
+            color: var(--bs-dropdown-color);
+            text-align: left;
+            list-style: none;
+            background-color: var(--bs-dropdown-bg);
+            background-clip: padding-box;
+            border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+            border-radius: var(--bs-dropdown-border-radius)
+        }
+
+        .dropdown-item {
+            display: block;
+            width: 100%;
+            padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+            clear: both;
+            font-weight: 400;
+            color: var(--bs-dropdown-link-color);
+            text-align: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+            border-radius: var(--bs-dropdown-item-border-radius, 0)
+        }
+
+        .nav-link {
+            display: block;
+            padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+            font-size: var(--bs-nav-link-font-size);
+            font-weight: var(--bs-nav-link-font-weight);
+            color: var(--bs-nav-link-color);
+            text-decoration: none;
+            background: 0 0;
+            border: 0
+        }
+
+        .navbar {
+            --bs-navbar-padding-x: 0;
+            --bs-navbar-padding-y: 0.5rem;
+            --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+            --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+            --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+            --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+            --bs-navbar-brand-padding-y: 0.3125rem;
+            --bs-navbar-brand-margin-end: 1rem;
+            --bs-navbar-brand-font-size: 1.25rem;
+            --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+            --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+            --bs-navbar-nav-link-padding-x: 0.5rem;
+            --bs-navbar-toggler-padding-y: 0.25rem;
+            --bs-navbar-toggler-padding-x: 0.75rem;
+            --bs-navbar-toggler-font-size: 1.25rem;
+            --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+            --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+            --bs-navbar-toggler-focus-width: 0.25rem;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)
+        }
+
+        .navbar>.container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .navbar-brand {
+            padding-top: var(--bs-navbar-brand-padding-y);
+            padding-bottom: var(--bs-navbar-brand-padding-y);
+            margin-right: var(--bs-navbar-brand-margin-end);
+            font-size: var(--bs-navbar-brand-font-size);
+            color: var(--bs-navbar-brand-color);
+            text-decoration: none;
+            white-space: nowrap
+        }
+
+        .navbar-nav {
+            --bs-nav-link-padding-x: 0;
+            --bs-nav-link-padding-y: 0.5rem;
+            --bs-nav-link-font-weight: ;
+            --bs-nav-link-color: var(--bs-navbar-color);
+            --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+            --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none
+        }
+
+        .navbar-nav .nav-link.active {
+            color: var(--bs-navbar-active-color)
+        }
+
+        .navbar-nav .dropdown-menu {
+            position: static
+        }
+
+        .navbar-collapse {
+            flex-grow: 1;
+            flex-basis: 100%;
+            align-items: center
+        }
+
+        .navbar-toggler {
+            padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+            font-size: var(--bs-navbar-toggler-font-size);
+            line-height: 1;
+            color: var(--bs-navbar-color);
+            background-color: transparent;
+            border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+            border-radius: var(--bs-navbar-toggler-border-radius)
+        }
+
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            background-image: var(--bs-navbar-toggler-icon-bg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%
+        }
+
+        @media (min-width:992px) {
+            .navbar-expand-lg {
+                flex-wrap: nowrap;
+                justify-content: flex-start
+            }
+
+            .navbar-expand-lg .navbar-nav {
+                flex-direction: row
+            }
+
+            .navbar-expand-lg .navbar-nav .dropdown-menu {
+                position: absolute
+            }
+
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: var(--bs-navbar-nav-link-padding-x);
+                padding-left: var(--bs-navbar-nav-link-padding-x)
+            }
+
+            .navbar-expand-lg .navbar-collapse {
+                display: flex !important;
+                flex-basis: auto
+            }
+
+            .navbar-expand-lg .navbar-toggler {
+                display: none
+            }
+        }
+
+        .navbar-dark {
+            --bs-navbar-color: rgba(255, 255, 255, 0.55);
+            --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+            --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+            --bs-navbar-active-color: #fff;
+            --bs-navbar-brand-color: #fff;
+            --bs-navbar-brand-hover-color: #fff;
+            --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+            --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+        }
+
+        :root {
+            --bs-btn-close-filter:
+        }
+
+        :root {
+            --bs-carousel-indicator-active-bg: #fff;
+            --bs-carousel-caption-color: #fff;
+            --bs-carousel-control-icon-filter:
+        }
+
+        .d-flex {
+            display: flex !important
+        }
+
+        .position-relative {
+            position: relative !important
+        }
+
+        .position-absolute {
+            position: absolute !important
+        }
+
+        .w-100 {
+            width: 100% !important
+        }
+
+        .flex-row-reverse {
+            flex-direction: row-reverse !important
+        }
+
+        .justify-content-center {
+            justify-content: center !important
+        }
+
+        .align-items-center {
+            align-items: center !important
+        }
+
+        .m-0 {
+            margin: 0 !important
+        }
+
+        .mt-1 {
+            margin-top: .25rem !important
+        }
+
+        .mt-5 {
+            margin-top: 3rem !important
+        }
+
+        .mb-2 {
+            margin-bottom: .5rem !important
+        }
+
+        .mb-3 {
+            margin-bottom: 1rem !important
+        }
+
+        .mb-5 {
+            margin-bottom: 3rem !important
+        }
+
+        .p-0 {
+            padding: 0 !important
+        }
+
+        .py-2 {
+            padding-top: .5rem !important;
+            padding-bottom: .5rem !important
+        }
+
+        .text-center {
+            text-align: center !important
+        }
+
+        .text-white {
+            --bs-text-opacity: 1;
+            color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important
+        }
+
+        .bg-white {
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important
+        }
+
+        @media (min-width:768px) {
+            .text-md-start {
+                text-align: left !important
+            }
+        }
+
+        @media (min-width:992px) {
+            .mb-lg-0 {
+                margin-bottom: 0 !important
+            }
+        }
+
+        [data-aos^=fade][data-aos^=fade] {
+            opacity: 0
+        }
+
+        [data-aos=fade-up] {
+            transform: translate3d(0, 100px, 0)
+        }
+
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        :root {
+            --base-color: #000000;
+            --common-color: #FF0000;
+            --theme-pink-light: #FFE6E6;
+            --bs-accordion-btn-active-iconn: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3e%3cpath d='M12.1748 0.5C12.3391 0.5 12.4411 0.548503 12.5215 0.628906C12.6017 0.709215 12.6503 0.810702 12.6504 0.974609C12.6504 1.13881 12.6018 1.2409 12.5215 1.32129L7.26758 6.5752L7.62109 6.92871L12.5215 11.8281C12.6019 11.9085 12.6504 12.0106 12.6504 12.1748C12.6504 12.3391 12.6019 12.4411 12.5215 12.5215C12.4411 12.6019 12.3391 12.6504 12.1748 12.6504C12.0106 12.6504 11.9085 12.6019 11.8281 12.5215L6.92871 7.62109L6.5752 7.26758L1.32129 12.5215C1.2409 12.6018 1.13881 12.6504 0.974609 12.6504C0.810702 12.6503 0.709215 12.6017 0.628906 12.5215C0.548503 12.4411 0.5 12.3391 0.5 12.1748C0.500038 12.0106 0.548535 11.9085 0.628906 11.8281L5.88184 6.5752L5.52832 6.22168L0.628906 1.32129C0.548504 1.24089 0.5 1.13888 0.5 0.974609C0.500076 0.810568 0.548567 0.709245 0.628906 0.628906C0.709245 0.548567 0.810568 0.500076 0.974609 0.5C1.13888 0.5 1.24089 0.548504 1.32129 0.628906L6.22168 5.52832L6.5752 5.88184L11.8281 0.628906C11.9085 0.548535 12.0106 0.500038 12.1748 0.5Z' fill='%23192023' stroke='%23192023'/%3e%3c/svg%3e") !important
+        }
+
+        body {
+            font-family: "Poppins", sans-serif
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        h2,
+        h3,
+        h4 {
+            padding: 0;
+            margin: 0
+        }
+
+        p {
+            padding: 0;
+            margin: 0
+        }
+
+        .container {
+            max-width: 1273px
+        }
+
+        .title-3 {
+            font-size: clamp(20px, 5vw, 36px);
+            font-family: "Poppins", sans-serif;
+            font-weight: 600
+        }
+
+        header {
+            background: #FFFFFF99;
+            backdrop-filter: blur(22px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9
+        }
+
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link {
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 20px 25px;
+            color: #121212;
+            border: none
+        }
+
+        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link.active {
+            border-bottom: 2px solid var(--common-color);
+            color: #FFFFFF;
+            background: #141414
+        }
+
+        .py-120 {
+            padding-top: 120px;
+            padding-bottom: 120px
+        }
+
+        .pt-120 {
+            padding-top: 120px
+        }
+
+        .pb-80 {
+            padding-bottom: 80px
+        }
+
+        .footer-section {
+            padding: 80px 0;
+            background: #00080B
+        }
+
+        .footer-col h2 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFFFFF
+        }
+
+        .footer-section .footer-col .list-unstyled li a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #FFFFFF
+        }
+
+        .footer-section .footer-col p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #FFFFFF
+        }
+
+        .btn-back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 0px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #fff;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999
         }
 
         header {
@@ -83,32 +898,82 @@
             position: unset !important;
             background-color: transparent;
             backdrop-filter: unset;
-            background-image: url('../assets/image/brudcumb-image.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('../image/brudcumb-image.webp')
         }
-    </style>
 
-    <style>
         .navbar-expand-lg .nav-item-text.navbar-nav .nav-link {
             color: white;
             padding: 20px 0;
-            margin-left: 32px;
+            margin-left: 32px
         }
 
-        .navbar-expand-lg .nav-item-text.navbar-nav .nav-link:hover,
         .navbar-expand-lg .nav-item-text.navbar-nav .nav-link.active {
-            background: unset;
+            background: unset
+        }
 
+        @media (max-width:768px) {
+            .navbar-nav .dropdown-menu {
+                background-color: #192023;
+                border: none;
+                box-shadow: none
+            }
+
+            .navbar-nav .dropdown-item {
+                color: #fff
+            }
+
+            .navbar-expand-lg .nav-item-text.navbar-nav .nav-link.active {
+                background: var(--common-color);
+                border: none !important;
+                box-shadow: none !important
+            }
+
+            .navbar-expand-lg .nav-item-text.navbar-nav .nav-link {
+                margin-left: 0px !important;
+                padding: 4px 8px;
+                margin-bottom: 8px
+            }
         }
 
         .brudcumb-title {
-            margin-top: 60px;
+            margin-top: 60px
         }
-    </style>
-    <style>
+
+        .animate-title {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: clamp(16px, 2.5vw, 34px);
+            color: var(--common-white)
+        }
+
+        .animate-title {
+            opacity: 0;
+            transform: translate(-50%, -50%) translateY(-100%);
+            animation: fadeSlideUp 1s ease-out forwards;
+            animation-delay: .3s
+        }
+
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -50%) translateY(200%)
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) translateY(50%)
+            }
+        }
+
         .team-title {
             font-size: 30px;
             color: #353535;
-            font-weight: 700;
+            font-weight: 700
         }
 
         .team-card-title {
@@ -118,53 +983,127 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            color: transparent;
+            color: transparent
         }
 
         .team-content p {
-            font-size: 18px;
+            font-size: 18px
         }
 
         section.dark {
-            background-color: #000000;
+            background-color: #000000
         }
 
         .team-card-body {
-            padding: 16px;
+            padding: 16px
         }
 
         .team-card-info .team-card-title {
             font-size: clamp(16px, 2vw, 20px);
-            font-weight: 600;
+            font-weight: 600
         }
 
         .team-card-info {
             margin-top: 16px;
             background-color: #E6E6E6;
             padding: 36px 16px;
-            text-align: center;
+            text-align: center
         }
 
         .team-card-info p {
             margin-top: 5px;
-            font-weight: 500;
+            font-weight: 500
         }
 
         .team-card-body {
             max-width: 302px;
-            margin: 0 auto;
+            margin: 0 auto
+        }
+
+        .social-floating {
+            position: fixed;
+            right: 0px;
+            z-index: 999;
+            transform: translateY(100%);
+            background-color: white;
+            padding: 8px;
+            border-radius: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+        }
+
+        .social-floating ul li {
+            margin: 0 0 10px 0
+        }
+
+        .social-floating ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        .social-floating .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #00080B;
+            border-radius: 50%;
+            background: #fff
         }
     </style>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preload" href="assets/aos-master/dist/aos.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/breadcrumb.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/css/our-team.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/breadcrumb.css">
+        <link rel="stylesheet" href="assets/css/our-team.css">
+    </noscript>
 </head>
 
 <body>
     <header>
+        <div class="social-floating">
+            <ul class="list-unstyled m-0 p-0">
+                <li><a href="#" class="social-icon"><svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.01333 9L8.45801 6.10437H5.67766V4.22531C5.67766 3.43313 6.06605 2.66094 7.31129 2.66094H8.57528V0.195625C8.57528 0.195625 7.42824 0 6.33155 0C4.04185 0 2.54519 1.38688 2.54519 3.8975V6.10437H0V9H2.54519V16H5.67766V9H8.01333Z"
+                                fill="#00080B" />
+                        </svg>
+                    </a></li>
+                <li><a href="#" class="social-icon"><svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.0103 3.41172C5.02143 3.41172 3.4172 5.01484 3.4172 7.00234C3.4172 8.98984 5.02143 10.593 7.0103 10.593C8.99917 10.593 10.6034 8.98984 10.6034 7.00234C10.6034 5.01484 8.99917 3.41172 7.0103 3.41172ZM7.0103 9.33672C5.72504 9.33672 4.67431 8.28984 4.67431 7.00234C4.67431 5.71484 5.72191 4.66797 7.0103 4.66797C8.29868 4.66797 9.34628 5.71484 9.34628 7.00234C9.34628 8.28984 8.29556 9.33672 7.0103 9.33672V9.33672ZM11.5884 3.26484C11.5884 3.73047 11.2132 4.10234 10.7504 4.10234C10.2844 4.10234 9.9123 3.72734 9.9123 3.26484C9.9123 2.80234 10.2876 2.42734 10.7504 2.42734C11.2132 2.42734 11.5884 2.80234 11.5884 3.26484ZM13.9682 4.11484C13.9151 2.99297 13.6586 1.99922 12.8362 1.18047C12.0169 0.361719 11.0224 0.105469 9.89979 0.0492187C8.74274 -0.0164062 5.27473 -0.0164062 4.11768 0.0492187C2.99816 0.102344 2.00372 0.358594 1.18128 1.17734C0.358841 1.99609 0.105541 2.98984 0.0492527 4.11172C-0.0164176 5.26797 -0.0164176 8.73359 0.0492527 9.88984C0.102414 11.0117 0.358841 12.0055 1.18128 12.8242C2.00372 13.643 2.99503 13.8992 4.11768 13.9555C5.27473 14.0211 8.74274 14.0211 9.89979 13.9555C11.0224 13.9023 12.0169 13.6461 12.8362 12.8242C13.6555 12.0055 13.9119 11.0117 13.9682 9.88984C14.0339 8.73359 14.0339 5.27109 13.9682 4.11484V4.11484ZM12.4734 11.1305C12.2295 11.743 11.7573 12.2148 11.1413 12.4617C10.2188 12.8273 8.02975 12.743 7.0103 12.743C5.99084 12.743 3.79871 12.8242 2.87933 12.4617C2.2664 12.218 1.7942 11.7461 1.54716 11.1305C1.18128 10.2086 1.26572 8.02109 1.26572 7.00234C1.26572 5.98359 1.18441 3.79297 1.54716 2.87422C1.79108 2.26172 2.26328 1.78984 2.87933 1.54297C3.80184 1.17734 5.99084 1.26172 7.0103 1.26172C8.02975 1.26172 10.2219 1.18047 11.1413 1.54297C11.7542 1.78672 12.2264 2.25859 12.4734 2.87422C12.8393 3.79609 12.7549 5.98359 12.7549 7.00234C12.7549 8.02109 12.8393 10.2117 12.4734 11.1305Z"
+                                fill="#00080B" />
+                        </svg>
+                    </a></li>
+                <li><a href="#" class="social-icon"><svg width="17" height="13" viewBox="0 0 17 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.3652 3.23856C14.3754 3.38069 14.3754 3.52284 14.3754 3.66497C14.3754 7.99997 11.0736 12.9949 5.039 12.9949C3.17985 12.9949 1.45278 12.4568 0 11.5228C0.264151 11.5533 0.518107 11.5634 0.792421 11.5634C2.32645 11.5634 3.73861 11.0457 4.86629 10.1624C3.42367 10.132 2.21471 9.18781 1.79818 7.88831C2.00138 7.91875 2.20455 7.93906 2.41792 7.93906C2.71252 7.93906 3.00716 7.89844 3.28145 7.82741C1.77788 7.52281 0.650167 6.20303 0.650167 4.60913V4.56853C1.087 4.81219 1.595 4.96447 2.13341 4.98475C1.24955 4.39591 0.670493 3.39084 0.670493 2.25378C0.670493 1.64466 0.833011 1.08628 1.11749 0.598969C2.73282 2.58881 5.1609 3.88828 7.88355 4.03044C7.83277 3.78678 7.80228 3.533 7.80228 3.27919C7.80228 1.47206 9.26522 0 11.0837 0C12.0285 0 12.8819 0.395938 13.4813 1.03553C14.2229 0.893406 14.9341 0.619281 15.564 0.243656C15.3201 1.00509 14.802 1.64469 14.1213 2.05075C14.7817 1.97972 15.4217 1.79694 16.011 1.54316C15.564 2.19287 15.0052 2.77153 14.3652 3.23856V3.23856Z"
+                                fill="#00080B" />
+                        </svg>
+                    </a></li>
+                <li><a href="#" class="social-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.13591 13.9997H0.231409V4.65281H3.13591V13.9997ZM1.6821 3.37781C0.753331 3.37781 0 2.60906 0 1.68094C6.6477e-09 1.23513 0.17722 0.807572 0.492674 0.492335C0.808129 0.177098 1.23598 0 1.6821 0C2.12822 0 2.55606 0.177098 2.87152 0.492335C3.18697 0.807572 3.36419 1.23513 3.36419 1.68094C3.36419 2.60906 2.61055 3.37781 1.6821 3.37781ZM14.0065 13.9997H11.1083V9.44969C11.1083 8.36531 11.0864 6.97469 9.59817 6.97469C8.08807 6.97469 7.85666 8.15281 7.85666 9.37156V13.9997H4.95529V4.65281H7.74096V5.92781H7.78161C8.16938 5.19344 9.11659 4.41844 10.5298 4.41844C13.4693 4.41844 14.0096 6.35281 14.0096 8.86531V13.9997H14.0065Z"
+                                fill="#00080B" />
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
         <div class="container">
             <!-- Example Code Start-->
-            <nav class="navbar navbar-expand-lg p-0">
+            <nav class="navbar navbar-dark navbar-expand-lg p-0">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/image/logo-white.png" alt="logo" />
+                    <a class="navbar-brand" href="/">
+                        <img src="assets/image/logo-white.webp" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -173,25 +1112,39 @@
                     <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
                         <ul class="navbar-nav nav-item-text">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Web Design</a>
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item" href="/web-development.html">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="/graphics-design.html">Graphic Design</a></li>
+                                    <li><a class="dropdown-item" href="/ui-ux-design.html">UI/UX Design</a></li>
+                                    <li><a class="dropdown-item" href="/digital-marketing.html">Digital Marketing</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Digital Marketing</a>
+                                <a class="nav-link" href="/our-team.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Graphic Design</a>
+                                <a class="nav-link" href="/portfolio.html">Work</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Services Menu</a>
+                                <a class="nav-link" href="/contact.html">Contact</a>
                             </li>
+
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Example Code End -->
         </div>
-        <div class="d-flex w-100 justify-content-center align-items-center">
-            <h3 class="text-center text-white brudcumb-title title-3">Our team</h3>
+        <div class="d-flex w-100 justify-content-center align-items-center position-relative">
+            <h3 class="text-center text-white brudcumb-title title-3 animate-title position-absolute">Our team</h3>
         </div>
     </header>
 
@@ -212,26 +1165,26 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="text-center text-md-start">
-                            <img class="img-fluid" src="assets/image/our-team/team-leader/1.png" alt="">
-                            <h5 class="team-card-title mt-5">Syed ibrahim eartaza</h5>
+                    <div class="col " data-aos="fade-up">
+                        <div class="text-center text-md-start flipup-hover">
+                            <img class="img-fluid" src="/assets/image/our-team/team-leader/1.webp" alt="team leader 1">
+                            <h3 class="team-card-title mt-5">Syed ibrahim eartaza</h3>
                             <p class="text-center mt-1">SEO of RILO</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="text-center text-md-start">
-                            <img src="assets/image/our-team/team-leader/2.png" alt="">
+                    <div class="col" data-aos="fade-up">
+                        <div class="text-center text-md-start  flipup-hover">
+                            <img src="/assets/image/our-team/team-leader/2.webp" alt="team leader 2">
                             <div class="mt-5">
-                                <h5 class="team-card-title">Syed ibrahim eartaza</h5>
+                                <h3 class="team-card-title">Syed ibrahim eartaza</h3>
                                 <p class="text-center mt-1">SEO of RILO</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="text-center text-md-start">
-                            <img src="assets/image/our-team/team-leader/3.png" alt="">
-                            <h5 class="team-card-title mt-5">Syed ibrahim eartaza</h5>
+                    <div class="col" data-aos="fade-up">
+                        <div class="text-center text-md-start  flipup-hover">
+                            <img src="assets/image/our-team/team-leader/3.webp" alt="team leader 3">
+                            <h3 class="team-card-title mt-5">Syed ibrahim eartaza</h3>
                             <p class="text-center mt-1">SEO of RILO</p>
                         </div>
                     </div>
@@ -254,37 +1207,24 @@
                     <div class="col">
                         <div class="team-card-body bg-white">
                             <div class="">
-                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.webp" alt="">
                             </div>
 
                             <div class="team-card-info">
-                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
-                                    <p>SEO of RILO</p>
+                                <h3 class="team-card-title">Syed ibrahim eartaza</h3>
+                                <p>SEO of RILO</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="team-card-body bg-white">
                             <div class="">
-                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.webp" alt="">
                             </div>
 
                             <div class="team-card-info">
-                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
-                                    <p>SEO of RILO</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col">
-                        <div class="team-card-body bg-white">
-                            <div class="">
-                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
-                            </div>
-
-                            <div class="team-card-info">
-                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
-                                    <p>SEO of RILO</p>
+                                <h3 class="team-card-title">Syed ibrahim eartaza</h3>
+                                <p>SEO of RILO</p>
                             </div>
                         </div>
 
@@ -292,12 +1232,12 @@
                     <div class="col">
                         <div class="team-card-body bg-white">
                             <div class="">
-                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.webp" alt="">
                             </div>
 
                             <div class="team-card-info">
-                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
-                                    <p>SEO of RILO</p>
+                                <h3 class="team-card-title">Syed ibrahim eartaza</h3>
+                                <p>SEO of RILO</p>
                             </div>
                         </div>
 
@@ -305,12 +1245,12 @@
                     <div class="col">
                         <div class="team-card-body bg-white">
                             <div class="">
-                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.webp" alt="">
                             </div>
 
                             <div class="team-card-info">
-                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
-                                    <p>SEO of RILO</p>
+                                <h3 class="team-card-title">Syed ibrahim eartaza</h3>
+                                <p>SEO of RILO</p>
                             </div>
                         </div>
 
@@ -318,12 +1258,12 @@
                     <div class="col">
                         <div class="team-card-body bg-white">
                             <div class="">
-                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.webp" alt="">
                             </div>
 
                             <div class="team-card-info">
-                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
-                                    <p>SEO of RILO</p>
+                                <h3 class="team-card-title">Syed ibrahim eartaza</h3>
+                                <p>SEO of RILO</p>
                             </div>
                         </div>
 
@@ -331,12 +1271,12 @@
                     <div class="col">
                         <div class="team-card-body bg-white">
                             <div class="">
-                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.webp" alt="">
                             </div>
 
                             <div class="team-card-info">
-                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
-                                    <p>SEO of RILO</p>
+                                <h3 class="team-card-title">Syed ibrahim eartaza</h3>
+                                <p>SEO of RILO</p>
                             </div>
                         </div>
 
@@ -344,12 +1284,25 @@
                     <div class="col">
                         <div class="team-card-body bg-white">
                             <div class="">
-                                <img class="img-fluid" src="assets/image/our-team/team-member/1.png" alt="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.webp" alt="">
                             </div>
 
                             <div class="team-card-info">
-                                <h5 class="team-card-title">Syed ibrahim eartaza</h3>
-                                    <p>SEO of RILO</p>
+                                <h3 class="team-card-title">Syed ibrahim eartaza</h3>
+                                <p>SEO of RILO</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="team-card-body bg-white">
+                            <div class="">
+                                <img class="img-fluid" src="assets/image/our-team/team-member/1.webp" alt="">
+                            </div>
+
+                            <div class="team-card-info">
+                                <h3 class="team-card-title">Syed ibrahim eartaza</h3>
+                                <p>SEO of RILO</p>
                             </div>
                         </div>
 
@@ -361,22 +1314,30 @@
     </main>
 
     <footer class="footer-section">
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="btn-back-to-top">
+            <!-- Up Arrow SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" viewBox="0 0 24 24">
+                <path d="M12 4l-8 8h6v8h4v-8h6z" />
+            </svg>
+        </button>
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-sm-6 footer-col mb-5 mb-lg-0">
-                    <h6 class="mb-2">Quick Links</h6>
+                    <h2 class="mb-4 footer-title">Quick Links</h2>
                     <ul class="list-unstyled">
-                        <li class="py-2">
+                        <li class="pb-2">
                             <a href="#">About Us</a>
                         </li>
                         <li class="py-2">
                             <a href="#">Services</a>
                         </li>
                         <li class="py-2">
-                            <a href="#">Contact Us</a>
+                            <a href="contact.html">Contact Us</a>
                         </li>
                         <li class="py-2">
-                            <a href="#">Blog</a>
+                            <a href="/blogs.html">Blog</a>
                         </li>
                         <li class="py-2">
                             <a href="#">Support</a>
@@ -384,51 +1345,97 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
-                    <h6 class="mb-3">Address</h6>
-                    <p class="py-2">
+                    <h2 class="mb-4 footer-title">Address</h2>
+                    <p class="pb-2">
                         House no 10, Road no 12, Jasimuddin, Sector 1, Uttara, Dhaka, Bangladesh.
                     </p>
-                    <p class="py-2">+880 01851670403</p>
-                    <p class="py-2">contact@dnationsoft.com</p>
+                    <p class="py-2">
+                        <a href="tel:+8801851670403" class="contact-link">+880 01851670403</a>
+                    </p>
+                    <p class="py-2">
+                        <a href="mailto:contact@dnationsoft.com" class="contact-link">contact@dnationsoft.com</a>
+                    </p>
+
                 </div>
                 <div class="col-lg-4 col-sm-6 footer-col mb-5 mb-lg-0">
-                    <h6 class="mb-3">Address 2</h6>
-                    <p class="py-2">Firoz Mansion, 1nd floor, Post code 7460, Noapara, Avayanagor, Jessore,
+                    <h2 class="mb-4 footer-title">Address 2</h2>
+                    <p class="pb-2">Firoz Mansion, 1nd floor, Post code 7460, Noapara, Avayanagor, Jessore,
                         Bangladesh.</p>
-                    <p class="py-2">+8801924329315</p>
-                    <p class="py-2">contact@dnationsoft.com</p>
+                    <p class="py-2">
+                        <a href="tel:+8801851670403" class="contact-link">+880 01851670403</a>
+                    </p>
+                    <p class="py-2">
+                        <a href="mailto:contact@dnationsoft.com" class="contact-link">contact@dnationsoft.com</a>
+                    </p>
+
                 </div>
                 <div class="col-lg-2 col-sm-6 footer-col d-flex justify-content-md-end mb-5 mb-lg-0">
                     <div>
-                        <h6 class="mb-3">Follow Us</h6>
+                        <h2 class="mb-4 footer-title">Follow Us</h2>
                         <ul class="list-unstyled">
                             <li class="py-2">
-                                <a href="#" class="d-flex align-items-center gap-3">
-                                    <img src="assets/image/facebook.svg" />
-                                    Facebook
+                                <a href="#" class="d-flex align-items-center gap-3 facebook">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 10.0611C20 4.50451 15.5229 0 10 0C4.47715 0 0 4.50451 0 10.0611C0 15.0828 3.65684 19.2452 8.4375 20V12.9694H5.89844V10.0611H8.4375V7.84452C8.4375 5.32296 9.9305 3.93012 12.2146 3.93012C13.3088 3.93012 14.4531 4.12663 14.4531 4.12663V6.60261H13.1922C11.95 6.60261 11.5625 7.37822 11.5625 8.1739V10.0611H14.3359L13.8926 12.9694H11.5625V20C16.3432 19.2452 20 15.083 20 10.0611Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>Facebook
                                 </a>
                             </li>
                             <li class="py-2">
-                                <a href="#" class="d-flex align-items-center gap-3">
-                                    <img src="assets/image/x.svg" />
-                                    X
-                                </a>
-                            </li>
-                            <li class="py-2">
-                                <a href="#" class="d-flex align-items-center gap-3">
-                                    <img src="assets/image/Instagram.svg" />
+                                <a href="#" class="d-flex align-items-center gap-3 instagram">
+                                    <span>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M13 0H5C2.23858 0 0 2.23858 0 5V13C0 15.7614 2.23858 18 5 18H13C15.7614 18 18 15.7614 18 13V5C18 2.23858 15.7614 0 13 0ZM16.25 13C16.2445 14.7926 14.7926 16.2445 13 16.25H5C3.20735 16.2445 1.75549 14.7926 1.75 13V5C1.75549 3.20735 3.20735 1.75549 5 1.75H13C14.7926 1.75549 16.2445 3.20735 16.25 5V13ZM13.75 5.25C14.3023 5.25 14.75 4.80228 14.75 4.25C14.75 3.69772 14.3023 3.25 13.75 3.25C13.1977 3.25 12.75 3.69772 12.75 4.25C12.75 4.80228 13.1977 5.25 13.75 5.25ZM9 4.5C6.51472 4.5 4.5 6.51472 4.5 9C4.5 11.4853 6.51472 13.5 9 13.5C11.4853 13.5 13.5 11.4853 13.5 9C13.5027 7.8057 13.0294 6.65957 12.1849 5.81508C11.3404 4.97059 10.1943 4.49734 9 4.5ZM6.25 9C6.25 10.5188 7.4812 11.75 9 11.75C10.5188 11.75 11.75 10.5188 11.75 9C11.75 7.4812 10.5188 6.25 9 6.25C7.4812 6.25 6.25 7.4812 6.25 9Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </span>
                                     Instagram
                                 </a>
                             </li>
                             <li class="py-2">
-                                <a href="#" class="d-flex align-items-center gap-3">
-                                    <img src="assets/image/Linkedin.svg" />
+                                <a href="#" class="d-flex align-items-center gap-3 x">
+                                    <span><svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.1761 0H16.9362L10.9061 6.7774L18 16H12.4456L8.0951 10.4066L3.11723 16H0.35544L6.80517 8.7508L0 0H5.69545L9.6279 5.11262L14.1761 0ZM13.2073 14.3754H14.7368L4.86441 1.53928H3.2232L13.2073 14.3754Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                    X
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a href="#" class="d-flex align-items-center gap-3 linkedin">
+                                    <span>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.5 0C0.67157 0 0 0.67157 0 1.5V16.5C0 17.3284 0.67157 18 1.5 18H16.5C17.3284 18 18 17.3284 18 16.5V1.5C18 0.67157 17.3284 0 16.5 0H1.5ZM5.52076 4.00272C5.52639 4.95897 4.81061 5.54819 3.96123 5.54397C3.16107 5.53975 2.46357 4.90272 2.46779 4.00413C2.47201 3.15897 3.13998 2.47975 4.00764 2.49944C4.88795 2.51913 5.52639 3.1646 5.52076 4.00272ZM9.2797 6.76176H6.75971H6.7583V15.3216H9.4217V15.1219C9.4217 14.742 9.4214 14.362 9.4211 13.9819C9.4203 12.9681 9.4194 11.9532 9.4246 10.9397C9.426 10.6936 9.4372 10.4377 9.5005 10.2028C9.7381 9.3253 10.5271 8.7586 11.4074 8.8979C11.9727 8.9864 12.3467 9.3141 12.5042 9.8471C12.6013 10.1803 12.6449 10.5389 12.6491 10.8863C12.6605 11.9339 12.6589 12.9815 12.6573 14.0292C12.6567 14.399 12.6561 14.769 12.6561 15.1388V15.3202H15.328V15.1149C15.328 14.6629 15.3278 14.211 15.3275 13.7591C15.327 12.6296 15.3264 11.5001 15.3294 10.3702C15.3308 9.8597 15.276 9.3563 15.1508 8.8627C14.9638 8.1286 14.5771 7.5211 13.9485 7.0824C13.5027 6.77019 13.0133 6.5691 12.4663 6.5466C12.404 6.54401 12.3412 6.54062 12.2781 6.53721C11.9984 6.52209 11.7141 6.50673 11.4467 6.56066C10.6817 6.71394 10.0096 7.0641 9.5019 7.6814C9.4429 7.7522 9.3852 7.8241 9.2991 7.9314L9.2797 7.9557V6.76176ZM2.68164 15.3244H5.33242V6.76733H2.68164V15.3244Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </span>
                                     LinkedIn
                                 </a>
                             </li>
                             <li class="py-2">
-                                <a href="#" class="d-flex align-items-center gap-3">
-                                    <img src="assets/image/youtube.svg" />
+                                <a href="#" class="d-flex align-items-center gap-3 youtube">
+                                    <span>
+                                        <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.607 2.20301C19.4931 1.78041 19.2705 1.39501 18.9614 1.08518C18.6522 0.775338 18.2673 0.551868 17.845 0.437007C16.279 0.00700739 10.014 7.59651e-06 10.014 7.59651e-06C10.014 7.59651e-06 3.75 -0.00699261 2.183 0.404007C1.76093 0.524154 1.37682 0.750785 1.06757 1.06214C0.758311 1.3735 0.534287 1.75913 0.417002 2.18201C0.00400165 3.74801 1.46514e-06 6.99601 1.46514e-06 6.99601C1.46514e-06 6.99601 -0.00399852 10.26 0.406001 11.81C0.636001 12.667 1.311 13.344 2.169 13.575C3.751 14.005 9.999 14.012 9.999 14.012C9.999 14.012 16.264 14.019 17.83 13.609C18.2525 13.4943 18.6377 13.2714 18.9477 12.9622C19.2576 12.653 19.4814 12.2682 19.597 11.846C20.011 10.281 20.014 7.03401 20.014 7.03401C20.014 7.03401 20.034 3.76901 19.607 2.20301ZM8.01 10.005L8.015 4.00501L13.222 7.01001L8.01 10.005Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </span>
                                     Youtube
                                 </a>
                             </li>
@@ -437,7 +1444,9 @@
                 </div>
             </div>
             <div class="my-5">
-                <img src="assets/image/footer-logo.svg" alt="Brand Logo" />
+                <a href="/">
+                    <img src="assets/image/footer-logo.svg" alt="Brand Logo">
+                </a>
             </div>
         </div>
         <div class="container border-top border-secondary pt-4">
@@ -455,148 +1464,11 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script>
-        const path = document.querySelectorAll(".tick path");
-        path.forEach((e) => {
-            setInterval(() => {
-                const length = e.getTotalLength();
-
-                // Initial state (pen start)
-                gsap.set(e, {
-                    strokeDasharray: length,
-                    strokeDashoffset: length
-                });
-
-                // Hand-draw animation timeline
-                gsap.timeline()
-                    .to(e, {
-                        strokeDashoffset: length * 0.55,
-                        duration: 0.35,
-                        ease: "power1.inOut"
-                    })
-                    .to(e, {
-                        strokeDashoffset: 0,
-                        duration: 0.45,
-                        ease: "power2.out"
-                    })
-                    .fromTo("#tick",
-                        { rotate: -3 },
-                        { rotate: 0, duration: 0.2, ease: "power1.out" },
-                        "-=0.3"
-                    );
-            }, 3000)
-
-
-        })
-
-
-
-    </script>
-
-
-
-    <script>
-
-        function updateDots(activeIndex) {
-            const dots = document.querySelectorAll('.pagination-dots .dot');
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === activeIndex);
-            });
-        }
-
-        const dotsContainer = document.querySelector('.pagination-dots');
-        function createDots(swiper) {
-            const slideCount = swiper.slides.length;
-            dotsContainer.innerHTML = '';
-
-            for (let i = 0; i < slideCount; i++) {
-                const dot = document.createElement('span');
-                dot.className = 'dot';
-                if (i === 0) {
-                    dot.classList.add('active');
-                }
-                dot.addEventListener('click', () => {
-                    swiper.slideToLoop(i);
-                });
-
-                dotsContainer.appendChild(dot);
-            }
-        }
-
-        const dots = document.querySelectorAll('.pagination-dots .dot');
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                swiper.slideToLoop(index);
-            });
-        });
-
-
-        const swiper = new Swiper('.swiper', {
-            direction: 'horizontal',
-            loop: true,
-            slidesPerView: 1,
-            on: {
-                init(swiper) {
-                    createDots(swiper);
-                    updateDots(swiper.realIndex);
-                },
-                slideChange(swiper) {
-                    updateDots(swiper.realIndex);
-                }
-            }
-        });
-
-
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const circles = document.querySelectorAll(".process-step");
-            let index = 0;
-
-            function runSequence() {
-                // Add active class to one circle at a time
-                circles[index].classList.add("active");
-
-                // Move to next circle
-                index++;
-
-                // If we reached the end, reset all and restart
-                if (index >= circles.length) {
-                    setTimeout(() => {
-                        circles.forEach(c => c.classList.remove("active")); // reset all to white
-                        index = 0;
-                        setTimeout(runSequence, 1200);
-                    }, 1200); // pause before reset
-
-                } else {
-                    setTimeout(runSequence, 1200); // delay between each step
-                }
-            }
-
-            runSequence();
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const cards = document.querySelectorAll(".successStories-cart");
-
-            cards.forEach(card => {
-                card.addEventListener("click", () => {
-                    // Close all other cards
-                    cards.forEach(c => c.classList.remove("active"));
-
-                    // Open the clicked card
-                    card.classList.add("active");
-                });
-            });
-        });
-
-    </script>
-
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/aos-master/dist/aos.js" defer></script>
+    <script src="assets/lenis/package/dist/lenis.min.js" defer></script>
+    <script src="assets/js/common-js.js" defer></script>
+    <script src="assets/js/our-team.js" defer></script>
 </body>
 
 </html>

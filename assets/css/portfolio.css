@@ -1,0 +1,64 @@
+  .portfolio-card {
+      position: relative;
+      cursor: pointer;
+      background: #FFD7D7;
+      padding: 24px;
+      max-width: 409px;
+      overflow: hidden;
+  }
+
+  .portfolio-card {
+      position: relative;
+      cursor: pointer;
+      background: #FFD7D7;
+      padding: 24px;
+      max-width: 409px;
+      margin: 0 auto;
+      overflow: hidden;
+  }
+
+  .portfolio-card-details {
+      height: 100%;
+      width: 100%;
+      background-color: #FF0000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(120%);
+      transition: transform 0.5s ease-in-out;
+      /* smooth slide */
+  }
+
+  .portfolio-card:hover .portfolio-card-details {
+      transform: translateY(0%);
+  }
+
+  .portfolio-card-details .title {
+      font-size: 30px;
+      color: white;
+  }
+
+  .portfolio-card-details a {
+      font-size: 20px;
+      color: white;
+  }
+
+
+  .consultation-today-section {
+      padding: 175px 0;
+  }
+
+  .consultation-today-section h2 {
+      font-weight: 600;
+      line-height: 110.00000000000001%;
+      text-transform: capitalize;
+      color: #FFFFFF;
+  }
+
+  .consultation-today-section p {
+      font-weight: 400;
+      line-height: 150%;
+      /*  */
+      text-align: center;
+      margin-bottom: 70px;
+  }

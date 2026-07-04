@@ -88,7 +88,7 @@ header {
     font-family: Poppins;
     font-weight: 500;
     font-size: 1rem;
-    padding: 32px 25px;
+    padding: 20px 25px;
     color: #121212;
     border-style: solid;
     border-bottom-width: 2px;
@@ -265,19 +265,6 @@ h2 {
     text-transform: capitalize;
 }
 
-/* Service Cards Styling */
-.service-card {
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.service-card:not(.active-card) {
-    background-color: transparent;
-}
-
-.service-card.active-card {
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
-}
-
 /* Button Styling */
 .btn-danger {
     background-color: #ff1a1a;
@@ -383,7 +370,7 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     text-align: center;
     padding-top: 38px;
     max-width: 1089px;
@@ -430,29 +417,6 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-}
-
-/* Service Cards */
-.service-card {
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-
-/* The active white card */
-.service-card.active-card {
-    background-color: #ffffff;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: none;
-}
-
-/* The dark inactive cards */
-.service-card.dark-card {
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.service-card.dark-card:hover {
-    border-color: var(--theme-red);
 }
 
 /* 4. Work Process Section (White BG) */
@@ -603,7 +567,7 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 120%;
-    letter-spacing: 0%;
+    
     text-transform: capitalize;
     color: #414141;
 }
@@ -754,7 +718,7 @@ h2 {
     font-weight: 600;
     font-size: 44px;
     line-height: 110.00000000000001%;
-    letter-spacing: 0%;
+    
     text-transform: capitalize;
     color: #FFFFFF;
 }
@@ -763,7 +727,7 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     text-align: center;
     color: #AAAAAA;
     margin-top: 57px;
@@ -775,7 +739,7 @@ h2 {
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #FFFFFF;
 }
 
@@ -787,7 +751,7 @@ h2 {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #DDDDDD;
     padding-top: 8px;
     padding-bottom: 93px;
@@ -816,7 +780,7 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     text-align: center;
     color: #00080B;
 }
@@ -833,7 +797,7 @@ h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #192023;
 }
 
@@ -866,7 +830,7 @@ h2 {
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #00080B;
 }
 
@@ -874,7 +838,7 @@ h2 {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #00080B;
 }
 
@@ -904,7 +868,7 @@ h2 {
     font-weight: 600;
     font-size: 44px;
     line-height: 110.00000000000001%;
-    letter-spacing: 0%;
+    
     text-transform: capitalize;
     color: #FFFFFF;
 }
@@ -913,7 +877,7 @@ h2 {
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #FFFFFF;
 }
 
@@ -921,7 +885,7 @@ h2 {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #979797;
 }
 
@@ -941,7 +905,7 @@ h2 {
     font-weight: 600;
     font-size: 44px;
     line-height: 110.00000000000001%;
-    letter-spacing: 0%;
+    
     text-transform: capitalize;
     color: #FFFFFF;
 }
@@ -950,7 +914,7 @@ h2 {
     font-weight: 600;
     font-size: 44px;
     line-height: 110.00000000000001%;
-    letter-spacing: 0%;
+    
     text-transform: capitalize;
     color: #FFFFFF;
 }
@@ -959,7 +923,7 @@ h2 {
     font-weight: 400;
     font-size: #DDDDDD;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     text-align: center;
     margin-bottom: 70px;
 }
@@ -974,7 +938,7 @@ h2 {
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #FFFFFF;
     background: var(--common-color);
     padding: 10px 16px;
@@ -997,7 +961,7 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     text-align: center;
     margin-top: 29px;
     margin-bottom: 92px;
@@ -1013,7 +977,7 @@ h2 {
     font-size: 18px;
     color: #00080B;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     text-align: center;
 }
 
@@ -1071,7 +1035,7 @@ h2 {
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #FFFFFF;
 }
 
@@ -1079,7 +1043,7 @@ h2 {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #FFFFFF;
 }
 
@@ -1087,7 +1051,7 @@ h2 {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #FFFFFF;
 }
 
@@ -1095,7 +1059,7 @@ h2 {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     color: #FFFFFF;
 }
 
@@ -1103,7 +1067,7 @@ h2 {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-thickness: 0%;
@@ -1139,7 +1103,7 @@ h2 {
     font-weight: 600;
     font-size: 24px;
     line-height: 110.00000000000001%;
-    letter-spacing: 0%;
+    
     text-transform: capitalize;
     background: linear-gradient(90deg, #003763 24.59%, var(--common-color) 100%);
     -webkit-background-clip: text;
@@ -1167,7 +1131,7 @@ h2 {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
+    
 }
 
 .feature-list i {

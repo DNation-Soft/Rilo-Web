@@ -1,0 +1,105 @@
+.consultation-today-section {
+    padding: 175px 0;
+}
+
+.consultation-today-section h2 {
+    font-weight: 600;
+    line-height: 110.00000000000001%;
+
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.consultation-today-section p {
+    font-weight: 400;
+    line-height: 150%;
+
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.tab-link-container {
+    margin-bottom: 70px;
+}
+
+.tab-link {
+    text-decoration: none;
+    border: 1px solid #193A50;
+    padding: 10px 22px;
+    color: #212121;
+    border-radius: 32px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.tab-link.active {
+    border: 1px solid #B4D7EE;
+    background: #E3F4FF;
+}
+
+.tab-link:hover {
+    border: 1px solid #B4D7EE;
+    background: #E3F4FF;
+}
+
+.portfolio-card {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 400px;
+    border: 1px solid #EAEAEA;
+    margin: 0 auto;
+}
+
+.portfolio-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.p-date {
+    padding: 8px 10px;
+    color: white;
+    background-color: #FF0000;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    gap: 8px;
+    align-items: center;
+}
+
+.separetor {
+    width: 1px !important;
+    background-color: #EAEAEA;
+    height: auto;
+    margin: 0 20px;
+}
+
+.user-intarantion {
+    color: #858585;
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+.portfolio-description {
+    padding: 30px;
+    padding-top: 0px;
+}
+
+.portfolio-description .title {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2B2B52;
+    font-weight: 500;
+    margin-bottom: 16px;
+    min-height: 60px;
+}
+
+.portfolio-description p {
+    color: #52525C;
+}
+
+.read-more {
+    color: #FF0000;
+    text-decoration: none;
+}
