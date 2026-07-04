@@ -80,7 +80,7 @@ const heroSlider = new Swiper('.hero-slider', {
 });
 
 // Swiper (already fine)
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.clintSwiper', {
     loop: true,
     autoplay: false,
     slidesPerView: 1,
@@ -88,6 +88,16 @@ const swiper = new Swiper('.swiper', {
     effect: 'slide',          // built-in fade effect
     // fadeEffect: { crossFade: true },
     speed: 800               // transition speed in ms
+});
+const successSwiper = new Swiper('.mySuccessSwiper', {
+    autoplay:true,
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: ".success-pagination",
+        clickable: true,
+    }
 });
 
 // Process steps sequence

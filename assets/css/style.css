@@ -243,6 +243,11 @@ header {
     background-color: #ff0000;
 }
 
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #ff0000;
+}
+
 .clutch img {
     width: 76px;
 }

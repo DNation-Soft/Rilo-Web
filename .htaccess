@@ -1,0 +1,22 @@
+# .htaccess for Rilo-Web (Subfolder)
+RewriteEngine On
+
+# Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L,QSA]
+
+# Remove .html extension (if any left)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L,QSA]
+
+# Optional: Redirect old .html to clean URL (301 redirect)
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Optional: Force trailing slash (good for SEO)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(\.php|\.html|/)$
+RewriteRule ^(.*)$ $1/ [L,R=301]
